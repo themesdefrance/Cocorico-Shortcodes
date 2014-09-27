@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cocorico Shortcodes\n"
-"POT-Creation-Date: 2014-09-27 14:45+0100\n"
-"PO-Revision-Date: 2014-09-27 14:46+0100\n"
+"POT-Creation-Date: 2014-09-27 19:13+0100\n"
+"PO-Revision-Date: 2014-09-27 19:14+0100\n"
 "Last-Translator: Alex Thèmes de France <alex@themesdefrance.fr>\n"
 "Language-Team: Thèmes de France <alex@themesdefrance>\n"
 "Language: en_US\n"
@@ -13,96 +13,188 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n;_x;_ex\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x:1,2c;_ex\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../admin/cocorico-shortcodes-editor-langs.php:9
+#: ../admin/cocorico-shortcodes-editor-langs.php:10
+msgctxt "tinymce button label"
 msgid "Column"
 msgstr ""
 
-#: ../admin/cocorico-shortcodes-editor-langs.php:10
+#: ../admin/cocorico-shortcodes-editor-langs.php:11
+msgctxt "tinymce popup title"
 msgid "Add a column"
 msgstr ""
 
-#: ../admin/cocorico-shortcodes-editor-langs.php:11
-msgid "How to add a column process"
-msgstr ""
-
 #: ../admin/cocorico-shortcodes-editor-langs.php:12
+msgctxt "tinymce popup attribute label"
 msgid "Size"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:13
 #: ../cocorico-shortcodes-library.php:10 ../cocorico-shortcodes-library.php:14
+msgctxt "shortcode attribute name"
 msgid "size"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:14
 #: ../cocorico-shortcodes-library.php:20
+msgctxt "shortcode attribute value"
 msgid "one_half"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:15
 #: ../cocorico-shortcodes-library.php:23
+msgctxt "shortcode attribute value"
 msgid "one_third"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:16
 #: ../cocorico-shortcodes-library.php:26
+msgctxt "shortcode attribute value"
 msgid "two_thirds"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:17
 #: ../cocorico-shortcodes-library.php:29
+msgctxt "shortcode attribute value"
 msgid "one_fourth"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:18
 #: ../cocorico-shortcodes-library.php:32
+msgctxt "shortcode attribute value"
 msgid "three_fourths"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:19
+msgctxt "tinymce popup attribute label"
 msgid "Position"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:20
 #: ../cocorico-shortcodes-library.php:11 ../cocorico-shortcodes-library.php:15
+msgctxt "shortcode attribute name"
 msgid "position"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:21
+msgctxt "tinymce popup select label"
 msgid "First"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:22
 #: ../cocorico-shortcodes-library.php:40
+msgctxt "shortcode attribute value"
 msgid "first"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:23
+msgctxt "tinymce popup select label"
 msgid "Middle"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:24
 #: ../cocorico-shortcodes-library.php:43
+msgctxt "shortcode attribute value"
 msgid "middle"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:25
+msgctxt "tinymce popup select label"
 msgid "Last"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:26
-#: ../cocorico-shortcodes-library.php:46 ../cocorico-shortcodes-library.php:57
+#: ../cocorico-shortcodes-library.php:46
+msgctxt "shortcode attribute value"
 msgid "last"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:27
+#: ../admin/cocorico-shortcodes-editor-langs.php:42
+msgctxt "tinymce popup input label"
 msgid "Content"
 msgstr ""
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:28
-#: ../cocorico-shortcodes-library.php:62
+#: ../cocorico-shortcodes-library.php:100
+msgctxt "shortcode name"
 msgid "cocorico_column"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:30
+msgctxt "tinymce button label"
+msgid "Message box"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:31
+msgctxt "tinymce popup title"
+msgid "Add a message box"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:32
+msgctxt "tinymce popup attribute label"
+msgid "Type"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:33
+#: ../cocorico-shortcodes-library.php:68 ../cocorico-shortcodes-library.php:71
+msgctxt "shortcode attribute name"
+msgid "type"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:34
+msgctxt "tinymce popup select label"
+msgid "Info"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:35
+#: ../cocorico-shortcodes-library.php:76
+msgctxt "shortcode attribute value"
+msgid "info"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:36
+msgctxt "tinymce popup select label"
+msgid "Alert"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:37
+#: ../cocorico-shortcodes-library.php:79
+msgctxt "shortcode attribute value"
+msgid "alert"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:38
+msgctxt "tinymce popup select label"
+msgid "Error"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:39
+#: ../cocorico-shortcodes-library.php:82
+msgctxt "shortcode attribute value"
+msgid "error"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:40
+msgctxt "tinymce popup select label"
+msgid "Success"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:41
+#: ../cocorico-shortcodes-library.php:85
+msgctxt "shortcode attribute value"
+msgid "success"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:43
+#: ../cocorico-shortcodes-library.php:101
+msgctxt "shortcode name"
+msgid "cocorico_message"
+msgstr ""
+
+#: ../cocorico-shortcodes-library.php:57
+msgctxt "shortcode attribute name"
+msgid "last"
 msgstr ""
