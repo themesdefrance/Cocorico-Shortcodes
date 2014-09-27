@@ -1,48 +1,83 @@
-/* line 1, scss/style.scss */
+/* Commons */
+/* line 2, scss/style.scss */
+.cs_clear {
+  clear: both;
+}
+
+/* Columns */
+/* line 8, scss/style.scss */
 .cs_column {
   float: left;
   margin-right: 4%;
   width: 100%;
 }
 
-/* line 7, scss/style.scss */
+/* line 14, scss/style.scss */
 .cs_one_half {
   width: 48%;
 }
 
-/* line 11, scss/style.scss */
+/* line 18, scss/style.scss */
 .cs_one_third {
   width: 31.33333%;
   margin-right: 3%;
 }
 
-/* line 16, scss/style.scss */
+/* line 23, scss/style.scss */
 .cs_one_fourth {
   width: 23.5%;
   margin-right: 2%;
 }
 
-/* line 21, scss/style.scss */
+/* line 28, scss/style.scss */
 .cs_two_thirds {
   width: 65.66666%;
 }
 
-/* line 25, scss/style.scss */
+/* line 32, scss/style.scss */
 .cs_three_fourths {
   width: 72.5%;
 }
 
-/* line 29, scss/style.scss */
+/* line 36, scss/style.scss */
 .cs_one_half.cs_column_middle {
   margin-right: 2%;
 }
 
-/* line 33, scss/style.scss */
+/* line 40, scss/style.scss */
 .cs_column_last {
   margin-right: 0;
 }
 
-/* line 37, scss/style.scss */
-.cs_clear {
-  clear: both;
+/* Messages box */
+/* line 45, scss/style.scss */
+.cs_message {
+  padding: 30px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+/* line 50, scss/style.scss */
+.cs_message p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 55, scss/style.scss */
+.cs_message.cs_info {
+  background-color: #dcedee;
+  color: #1c3739;
+}
+/* line 60, scss/style.scss */
+.cs_message.cs_alert {
+  background-color: #fbffc8;
+  color: #3b4000;
+}
+/* line 65, scss/style.scss */
+.cs_message.cs_error {
+  background-color: #ffdddd;
+  color: #550000;
+}
+/* line 70, scss/style.scss */
+.cs_message.cs_success {
+  background-color: #e0f8e2;
+  color: #0f4313;
 }

@@ -1,3 +1,10 @@
+/* Commons */
+.cs_clear{
+	clear:both;
+}
+
+/* Columns */
+
 .cs_column{
 	float:left;
 	margin-right:4%;
@@ -34,6 +41,35 @@
 	margin-right:0;
 }
 
-.cs_clear{
-	clear:both;
+/* Messages box */
+.cs_message{
+	padding: 30px;
+	background-color:#f8f8f8;
+	margin-bottom: 20px;
+	
+	p{
+		margin:0 !important;
+		padding:0 !important;
+	}
+	
+	&.cs_info{
+		background-color:#dcedee;
+		color:#1c3739;
+	}
+	
+	&.cs_alert{
+		background-color:#fbffc8;
+		color:#3b4000;
+	}
+	
+	&.cs_error{
+		background-color:#ffdddd;
+		color:#550000;
+	}
+	
+	&.cs_success{
+		background-color:#e0f8e2;
+		color:#0f4313;
+	}
 }
+
