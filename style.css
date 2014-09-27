@@ -62,22 +62,42 @@
   padding: 0 !important;
 }
 /* line 55, scss/style.scss */
+.cs_message a:hover {
+  text-decoration: underline;
+}
+/* line 59, scss/style.scss */
 .cs_message.cs_info {
-  background-color: #dcedee;
-  color: #1c3739;
+  background-color: #eff8fe;
+  color: #5db2f0;
 }
-/* line 60, scss/style.scss */
+/* line 63, scss/style.scss */
+.cs_message.cs_info a, .cs_message.cs_info a:hover {
+  color: #158ce3;
+}
+/* line 68, scss/style.scss */
 .cs_message.cs_alert {
-  background-color: #fbffc8;
-  color: #3b4000;
+  background-color: #fffae9;
+  color: #f8ad0d;
 }
-/* line 65, scss/style.scss */
+/* line 72, scss/style.scss */
+.cs_message.cs_alert a, .cs_message.cs_alert a:hover {
+  color: #ab7605;
+}
+/* line 77, scss/style.scss */
 .cs_message.cs_error {
-  background-color: #ffdddd;
-  color: #550000;
+  background-color: #ffeeee;
+  color: #fc5355;
 }
-/* line 70, scss/style.scss */
+/* line 81, scss/style.scss */
+.cs_message.cs_error a, .cs_message.cs_error a:hover {
+  color: #c40306;
+}
+/* line 86, scss/style.scss */
 .cs_message.cs_success {
-  background-color: #e0f8e2;
-  color: #0f4313;
+  background-color: #ebfaf5;
+  color: #38c994;
+}
+/* line 90, scss/style.scss */
+.cs_message.cs_success a, .cs_message.cs_success a:hover {
+  color: #258763;
 }

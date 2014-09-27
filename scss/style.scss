@@ -52,24 +52,44 @@
 		padding:0 !important;
 	}
 	
+	a:hover{
+		text-decoration:underline;
+	}
+	
 	&.cs_info{
-		background-color:#dcedee;
-		color:#1c3739;
+		background-color:#eff8fe;
+		color:#5db2f0;
+		
+		a, a:hover{
+			color:#158ce3;
+		}
 	}
 	
 	&.cs_alert{
-		background-color:#fbffc8;
-		color:#3b4000;
+		background-color:#fffae9;
+		color:#f8ad0d;
+		
+		a, a:hover{
+			color:#ab7605;
+		}
 	}
 	
 	&.cs_error{
-		background-color:#ffdddd;
-		color:#550000;
+		background-color:#ffeeee;
+		color:#fc5355;
+		
+		a, a:hover{
+			color:#c40306;
+		}
 	}
 	
 	&.cs_success{
-		background-color:#e0f8e2;
-		color:#0f4313;
+		background-color:#ebfaf5;
+		color:#38c994;
+		
+		a, a:hover{
+			color:#258763;
+		}
 	}
 }
 
