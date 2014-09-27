@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Shortcode Column generator
 if(!function_exists('coco_shortcodes_column')){
 	function coco_shortcodes_column($atts, $content = null) {

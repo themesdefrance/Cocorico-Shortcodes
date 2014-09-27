@@ -12,23 +12,22 @@
 			type: 'menubutton',
             style: buttonstyle,
             tooltip: 'Cocorico Shortcodes',
-            //tooltip: editor.getLang('etendard_i18n_shortcodes.tooltip'),
             menu: [
             		
-            		{	text: 'Colonne', 
+            		{	text: editor.getLang('coco_shortcodes_tinymce.column'), 
             		
             			onclick: function() {
 				            // Open window
 				            editor.windowManager.open({
-				                title: 'Ajouter une colonne',
+				                title: editor.getLang('coco_shortcodes_tinymce.column_add'),
 				                body: [
 				                	{	type: 'label',
-				                		text: 'Description procédure ajout colonne'
+				                		text: editor.getLang('coco_shortcodes_tinymce.column_howto')
 				                	},
 				                										
 				                    {	type: 'listbox',
 				                    	name: 'format_col',
-				                    	label: 'Size',
+				                    	label: editor.getLang('coco_shortcodes_tinymce.column_size'),
 				                    	values:[	{text: '1/2', value: 'one_half'},
 							            			{text: '1/3', value: 'one_third'},
 							            			{text: '2/3', value: 'two_thirds'},
@@ -39,16 +38,16 @@
 				                    
 				                    {	type: 'listbox',
 				                    	name: 'position_col',
-				                    	label: 'Position',
-				                    	values:[	{text: 'First', value: 'first'},
-				                    				{text: 'Middle', value: 'middle'},
-							            			{text: 'Last', value: 'last'}
+				                    	label: editor.getLang('coco_shortcodes_tinymce.column_position'),
+				                    	values:[	{text: editor.getLang('coco_shortcodes_tinymce.column_first'), value: 'first'},
+				                    				{text: editor.getLang('coco_shortcodes_tinymce.column_middle'), value: 'middle'},
+							            			{text: editor.getLang('coco_shortcodes_tinymce.column_last'), value: 'last'}
 											    ]
 				                    },
 				                    
 				                    {	type: 'textbox',
 				                    	name: 'contenu_col',
-				                    	label: 'Contenu',
+				                    	label: editor.getLang('coco_shortcodes_tinymce.column_content'),
 				                    	multiline: true,
 				                    	minWidth: 300,
 				                    	minHeight: 100

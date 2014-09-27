@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Add the TinyMCE Menu Button
 if(!function_exists('coco_shortcodes_add_tinymce')){
 	function coco_shortcodes_add_tinymce() {
@@ -31,3 +33,14 @@ if(!function_exists('coco_shortcodes_add_tinymce_button')){
 	    return $buttons;
 	}
 }
+
+// TinyMce translation
+if(!function_exists('coco_shortcodes_tinymce_add_locale')){
+	function coco_shortcodes_tinymce_add_locale($locales) {
+	    $locales ['Cocorico-Shortcodes-TinyMce'] = plugin_dir_path ( __FILE__ ) . 'cocorico-shortcodes-editor-langs.php';
+	    return $locales;
+	}
+	add_filter('mce_external_languages', 'coco_shortcodes_tinymce_add_locale');
+}
+
+
