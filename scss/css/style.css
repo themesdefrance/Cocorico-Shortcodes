@@ -1,0 +1,20 @@
+.cs_column {
+  float: left;
+  margin-right: 2%;
+}
+
+.cs_one_half {
+  width: 48%;
+}
+
+.cs_one_third {
+  width: 32%;
+}
+
+.cs_column_last {
+  margin-right: 0;
+}
+
+.cs_clear {
+  clear: both;
+}
