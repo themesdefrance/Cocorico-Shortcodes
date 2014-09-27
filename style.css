@@ -23,11 +23,26 @@
 }
 
 /* line 21, scss/style.scss */
+.cs_two_thirds {
+  width: 65.66666%;
+}
+
+/* line 25, scss/style.scss */
+.cs_three_fourths {
+  width: 72.5%;
+}
+
+/* line 29, scss/style.scss */
+.cs_one_half.cs_column_middle {
+  margin-right: 2%;
+}
+
+/* line 33, scss/style.scss */
 .cs_column_last {
   margin-right: 0;
 }
 
-/* line 25, scss/style.scss */
+/* line 37, scss/style.scss */
 .cs_clear {
   clear: both;
 }
