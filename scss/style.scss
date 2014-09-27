@@ -56,7 +56,7 @@
 		text-decoration:underline;
 	}
 	
-	&.cs_info{
+	&.cs_message_info{
 		background-color:#eff8fe;
 		color:#5db2f0;
 		
@@ -65,7 +65,7 @@
 		}
 	}
 	
-	&.cs_alert{
+	&.cs_message_alert{
 		background-color:#fffae9;
 		color:#f8ad0d;
 		
@@ -74,7 +74,7 @@
 		}
 	}
 	
-	&.cs_error{
+	&.cs_message_error{
 		background-color:#ffeeee;
 		color:#fc5355;
 		
@@ -83,7 +83,7 @@
 		}
 	}
 	
-	&.cs_success{
+	&.cs_message_success{
 		background-color:#ebfaf5;
 		color:#38c994;
 		
@@ -92,4 +92,110 @@
 		}
 	}
 }
+
+/* Buttons */
+
+.cs_button{
+	
+	color:#ffffff !important;
+	display:inline-block;
+	&:hover{
+		text-decoration:none !important;
+	}
+	
+	&.cs_button_purple{
+		background-color:#8e44ad;
+		
+		&:hover{
+			background-color:#5c2c70;
+		}
+	}
+	
+	&.cs_button_blue{
+		background-color:#3498db;
+		
+		&:hover{
+			background-color:#1c6a9e;
+		}
+	}
+	
+	&.cs_button_turquoise{
+		background-color:#1abc9c;
+		
+		&:hover{
+			background-color:#10715e;
+		}
+	}
+	
+	&.cs_button_green{
+		background-color:#27ae60;
+		
+		&:hover{
+			background-color:#17693a;
+		}
+	}
+	
+	&.cs_button_yellow{
+		background-color:#f1c40f;
+		
+		&:hover{
+			background-color:#a28309;
+		}
+	}
+	
+	&.cs_button_orange{
+		background-color:#e67e22;
+		
+		&:hover{
+			background-color:#a15512;
+		}
+	}
+	
+	&.cs_button_red{
+		background-color:#e74c3c;
+		
+		&:hover{
+			background-color:#b82617;
+		}
+	}
+	
+	&.cs_button_pink{
+		background-color:#ffcad1;
+		
+		&:hover{
+			background-color:#ff7587;
+		}
+	}
+	
+	&.cs_button_grey{
+		background-color:#7f8c8d;
+		
+		&:hover{
+			background-color:#566061;
+		}
+	}
+	
+	&.cs_button_nightblue{
+		background-color:#2c3e50;
+		
+		&:hover{
+			background-color:#0e1419;
+		}
+	}
+	
+	&.cs_button_small{
+		padding:5px 10px;
+	}
+	
+	&.cs_button_medium{
+		padding:10px 20px;
+	}
+	
+	&.cs_button_large{
+		padding:15px 40px;
+	}
+}
+
+
+
 

@@ -134,7 +134,143 @@
 				        },
             			// END onclick
             		},
-					// END column
+					// END message
+					
+					// BEGIN button
+            		{	text: editor.getLang('coco_shortcodes_tinymce.button'),
+            			
+            			// BEGIN onclick
+            			onclick: function() {
+            			
+				            // BEGIN Popup
+				            editor.windowManager.open({
+				                title: editor.getLang('coco_shortcodes_tinymce.button_add'),
+				                // BEGIN body popup
+				                body: [	{	type: 'textbox',
+					                    	name: 'button_url',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_url')
+										},
+										
+										{	type: 'textbox',
+					                    	name: 'button_label',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_label')
+										},
+										
+										{	type: 'listbox',
+					                    	name: 'button_link_target',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_link_target'),
+					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.button_link_same'),
+					                    					value: ''
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_link_other'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_link_other_value')
+					                    				}
+												    ]
+										},
+										
+										{	type: 'label',
+					                    	name: 'button_style_label',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_style_label')
+										},
+										
+				                		{	type: 'listbox',
+					                    	name: 'button_size',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_size'),
+					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.button_small'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_small_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_medium'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_medium_value')
+					                    				},
+								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_large'),
+								            				value: editor.getLang('coco_shortcodes_tinymce.button_large_value')
+								            			}
+												    ]
+										},
+										
+										{	type: 'listbox',
+					                    	name: 'button_align',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_align'),
+					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.button_alignleft'),
+								            				value: editor.getLang('coco_shortcodes_tinymce.button_alignleft_value')
+								            			},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_aligncenter'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_aligncenter_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_alignright'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_alignright_value')
+					                    				}
+								            			
+												    ]
+										},
+				                    
+					                    {	type: 'listbox',
+					                    	name: 'button_color',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.button_color'),
+					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.button_grey'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_grey_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_purple'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_purple_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_blue'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_blue_value')
+					                    				},
+								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_turquoise'),
+								            				value: editor.getLang('coco_shortcodes_tinymce.button_turquoise_value')
+								            			},
+								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_green'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_green_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_yellow'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_yellow_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_orange'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_orange_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_red'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_red_value')
+					                    				},
+								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_pink'),
+								            				value: editor.getLang('coco_shortcodes_tinymce.button_pink_value')
+								            			},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_nightblue'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_nightblue_value')
+					                    				}
+												    ]
+										},
+
+				                ],
+				                // END body popup
+				                
+				                onsubmit: function(e) {
+				                
+				                	var res = '';
+				                	
+				                	res += '[' + editor.getLang('coco_shortcodes_tinymce.button_shortcode') + ' ';
+				                	
+				                	// URL and target attributes
+				                	res += editor.getLang('coco_shortcodes_tinymce.button_url_att') + '="' + e.data.button_url + '" ';
+				                	res += editor.getLang('coco_shortcodes_tinymce.button_target_att') + '="' + e.data.button_link_target + '" ';
+				                	// Styling attributes (size, alignement and color)
+				                	res += editor.getLang('coco_shortcodes_tinymce.button_size_att') + '="' + e.data.button_size + '" ';
+				                	res += editor.getLang('coco_shortcodes_tinymce.button_align_att') + '="' + e.data.button_align + '" ';
+				                	res += editor.getLang('coco_shortcodes_tinymce.button_color_att') + '="' + e.data.button_color + '"]';
+				                	
+				                	res += e.data.button_label;
+				                	
+				                	res += '[/' + editor.getLang('coco_shortcodes_tinymce.button_shortcode') + ']<br><br>';
+				                	
+				                    editor.insertContent(res);
+				                }
+				                
+				                
+				            });
+				            // END Popup
+				        },
+            			// END onclick
+            		},
+					// END button
             		
             		
             		
