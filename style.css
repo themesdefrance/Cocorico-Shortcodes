@@ -1,31 +1,33 @@
 /* line 1, scss/style.scss */
 .cs_column {
   float: left;
-  margin-right: 2%;
+  margin-right: 4%;
   width: 100%;
 }
 
 /* line 7, scss/style.scss */
 .cs_one_half {
-  width: 49%;
+  width: 48%;
 }
 
 /* line 11, scss/style.scss */
 .cs_one_third {
-  width: 32%;
+  width: 31.33333%;
+  margin-right: 3%;
 }
 
-/* line 15, scss/style.scss */
+/* line 16, scss/style.scss */
 .cs_one_fourth {
-  width: 24%;
+  width: 23.5%;
+  margin-right: 2%;
 }
 
-/* line 19, scss/style.scss */
+/* line 21, scss/style.scss */
 .cs_column_last {
   margin-right: 0;
 }
 
-/* line 23, scss/style.scss */
+/* line 25, scss/style.scss */
 .cs_clear {
   clear: both;
 }
