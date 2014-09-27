@@ -26,12 +26,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// Load Styles
-function coco_shortcodes_load_style() {
-	wp_enqueue_style( 'coco-social', plugins_url( '/style.css', __FILE__ ), false, '1.0.0', 'screen' );
-}
-add_action( 'wp_enqueue_scripts', 'coco_shortcodes_load_style' );
-
 // Load translations
 function coco_shortcodes_load_textdomain() {
 	$domain = 'cocoshortcodes';
@@ -43,10 +37,12 @@ function coco_shortcodes_load_textdomain() {
 add_action( 'init', 'coco_shortcodes_load_textdomain' );
 
 // Load Styles
-function coco_social_load_style() {
-	wp_enqueue_style( 'coco-social', plugins_url( '/style.css', __FILE__ ), false, null, 'screen' );
+if (!function_exists('coco_shortcodes_load_style')){
+	function coco_shortcodes_load_style() {
+		wp_enqueue_style( 'coco-shortcodes', plugins_url( '/style.css', __FILE__ ), false, null, 'screen' );
+	}
 }
-add_action( 'wp_enqueue_scripts', 'coco_social_load_style' );
+add_action( 'wp_enqueue_scripts', 'coco_shortcodes_load_style' );
 
 // Shortcodes Script Loading
 if (!function_exists('coco_shortcodes_enqueue')){

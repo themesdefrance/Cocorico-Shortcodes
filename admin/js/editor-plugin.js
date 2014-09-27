@@ -4,9 +4,9 @@
 		coco_shortcodesEd = editor;
 		coco_shortcodesUrl = url;
 		// We go up in the tree
-		coco_shortcodes_url = coco_shortcodesUrl.substring(0, coco_shortcodesUrl.length-2);
+		cs_url = coco_shortcodesUrl.substring(0, coco_shortcodesUrl.length-2);
 		
-		var buttonstyle = "background:url('" + coco_shortcodes_url + "img/cocorico.png') no-repeat 5px 2px";
+		var buttonstyle = "background:url('" + cs_url + "img/cocorico.png') no-repeat 5px 2px";
 		
         editor.addButton( 'coco_shortcodes_button', {
 			type: 'menubutton',
@@ -26,22 +26,28 @@
 				                	},
 				                										
 				                    {	type: 'listbox',
-				                    	name: 'format_col',
+				                    	name: 'size_col',
 				                    	label: editor.getLang('coco_shortcodes_tinymce.column_size'),
-				                    	values:[	{text: '1/2', value: 'one_half'},
-							            			{text: '1/3', value: 'one_third'},
-							            			{text: '2/3', value: 'two_thirds'},
-							            			{text: '1/4', value: 'one_fourth'},
-							            			{text: '3/4', value: 'three_fourths'}
+				                    	values:[	{text: '1/2', value: editor.getLang('coco_shortcodes_tinymce.column_one_half')},
+							            			{text: '1/3', value: editor.getLang('coco_shortcodes_tinymce.column_one_third')},
+							            			{text: '2/3', value: editor.getLang('coco_shortcodes_tinymce.column_two_thirds')},
+							            			{text: '1/4', value: editor.getLang('coco_shortcodes_tinymce.column_one_fourth')},
+							            			{text: '3/4', value: editor.getLang('coco_shortcodes_tinymce.column_three_fourths')}
 											    ]
 				                    },
 				                    
 				                    {	type: 'listbox',
 				                    	name: 'position_col',
 				                    	label: editor.getLang('coco_shortcodes_tinymce.column_position'),
-				                    	values:[	{text: editor.getLang('coco_shortcodes_tinymce.column_first'), value: 'first'},
-				                    				{text: editor.getLang('coco_shortcodes_tinymce.column_middle'), value: 'middle'},
-							            			{text: editor.getLang('coco_shortcodes_tinymce.column_last'), value: 'last'}
+				                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.column_first'),
+				                    					value: editor.getLang('coco_shortcodes_tinymce.column_first_value')
+				                    				},
+				                    				{	text: editor.getLang('coco_shortcodes_tinymce.column_middle'),
+				                    					value: editor.getLang('coco_shortcodes_tinymce.column_middle_value')
+				                    				},
+							            			{	text: editor.getLang('coco_shortcodes_tinymce.column_last'),
+							            				value: editor.getLang('coco_shortcodes_tinymce.column_last_value')
+							            			}
 											    ]
 				                    },
 				                    
@@ -58,8 +64,8 @@
 				                
 				                	var res = '';
 				                	
-				                	res += '[cocorico_column size="' + e.data.format_col + '" position="' + e.data.position_col+ '"]<br>';
-				                	res += e.data.contenu_col + '<br>[/cocorico_column]<br><br>';
+				                	res += '[' + editor.getLang('coco_shortcodes_tinymce.column_shortcode') + ' ' + editor.getLang('coco_shortcodes_tinymce.column_size_att') + '="' + e.data.size_col + '" ' + editor.getLang('coco_shortcodes_tinymce.column_position_att') + '="' + e.data.position_col+ '"]<br>';
+				                	res += e.data.contenu_col + '<br>[/' + editor.getLang('coco_shortcodes_tinymce.column_shortcode') + ']<br><br>';
 				                	
 				                    editor.insertContent(res);
 				                }

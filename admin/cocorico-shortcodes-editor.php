@@ -20,7 +20,7 @@ add_action( 'admin_head', 'coco_shortcodes_add_tinymce' );
 if(!function_exists('coco_shortcodes_add_tinymce_plugin')){
 	function coco_shortcodes_add_tinymce_plugin( $plugin_array ) {
 	
-	    $plugin_array['coco_shortcode_drop'] = plugins_url('/js/editor-plugin.js' , __FILE__) ;
+	    $plugin_array['coco_shortcode_drop'] = plugins_url('/js/editor-plugin.js' , __FILE__);
 	    return $plugin_array;
 	}
 }
@@ -40,7 +40,7 @@ if(!function_exists('coco_shortcodes_tinymce_add_locale')){
 	    $locales ['Cocorico-Shortcodes-TinyMce'] = plugin_dir_path ( __FILE__ ) . 'cocorico-shortcodes-editor-langs.php';
 	    return $locales;
 	}
-	add_filter('mce_external_languages', 'coco_shortcodes_tinymce_add_locale');
 }
+add_filter('mce_external_languages', 'coco_shortcodes_tinymce_add_locale');
 
 

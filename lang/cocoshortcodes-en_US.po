@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cocorico Shortcodes\n"
+"POT-Creation-Date: 2014-09-27 14:45+0100\n"
+"PO-Revision-Date: 2014-09-27 14:46+0100\n"
+"Last-Translator: Alex Thèmes de France <alex@themesdefrance.fr>\n"
+"Language-Team: Thèmes de France <alex@themesdefrance>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;_ex\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:9
+msgid "Column"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:10
+msgid "Add a column"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:11
+msgid "How to add a column process"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:12
+msgid "Size"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:13
+#: ../cocorico-shortcodes-library.php:10 ../cocorico-shortcodes-library.php:14
+msgid "size"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:14
+#: ../cocorico-shortcodes-library.php:20
+msgid "one_half"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:15
+#: ../cocorico-shortcodes-library.php:23
+msgid "one_third"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:16
+#: ../cocorico-shortcodes-library.php:26
+msgid "two_thirds"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:17
+#: ../cocorico-shortcodes-library.php:29
+msgid "one_fourth"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:18
+#: ../cocorico-shortcodes-library.php:32
+msgid "three_fourths"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:19
+msgid "Position"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:20
+#: ../cocorico-shortcodes-library.php:11 ../cocorico-shortcodes-library.php:15
+msgid "position"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:21
+msgid "First"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:22
+#: ../cocorico-shortcodes-library.php:40
+msgid "first"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:23
+msgid "Middle"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:24
+#: ../cocorico-shortcodes-library.php:43
+msgid "middle"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:25
+msgid "Last"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:26
+#: ../cocorico-shortcodes-library.php:46 ../cocorico-shortcodes-library.php:57
+msgid "last"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:27
+msgid "Content"
+msgstr ""
+
+#: ../admin/cocorico-shortcodes-editor-langs.php:28
+#: ../cocorico-shortcodes-library.php:62
+msgid "cocorico_column"
+msgstr ""
