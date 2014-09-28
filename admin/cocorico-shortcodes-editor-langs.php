@@ -109,7 +109,22 @@ function coco_shortcodes_tinymce_translation() {
         'button_nightblue_value'=> _x('nightblue', 'shortcode attribute value', 'cocoshortcodes'),
         
         'button_shortcode'		=> _x('cocorico_button', 'shortcode name', 'cocoshortcodes'),
-
+		
+		// Tabs shortcode strings
+		
+		'tabs'					=> _x('Tabs', 'tinymce tabs label', 'cocoshortcodes'),
+        'tabs_add'				=> _x('Add tabs', 'tinymce popup title', 'cocoshortcodes'),
+        'tabs_label'			=> _x('Select how many tabs to insert', 'tinymce section title', 'cocoshortcodes'),
+        
+        'tabs_number'			=> _x('Nombre', 'tinymce popup attribute label', 'cocoshortcodes'),
+        
+        'tab_label_att'			=> _x('label', 'shortcode attribute name', 'cocoshortcodes'),
+        'tab_label_value'		=> _x('Tab label', 'shortcode attribute value', 'cocoshortcodes'),
+        'tab_content'			=> _x('Tab content', 'shortcode default content', 'cocoshortcodes'),
+        
+        'tabs_shortcode'		=> _x('cocorico_tabs', 'shortcode name', 'cocoshortcodes'),
+        'single_tab_shortcode'	=> _x('cocorico_tab', 'shortcode name', 'cocoshortcodes'),
+		
     );
     $locale = _WP_Editors::$mce_locale;
     $translated = 'tinyMCE.addI18n("' . $locale . '.coco_shortcodes_tinymce", ' . json_encode( $strings ) . ");\n";

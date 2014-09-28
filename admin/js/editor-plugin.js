@@ -256,6 +256,63 @@
 					// END button
             		
             		
+            		// BEGIN tabs
+            		{	text: editor.getLang('coco_shortcodes_tinymce.tabs'),
+            			
+            			// BEGIN onclick
+            			onclick: function() {
+            			
+				            // BEGIN Popup
+				            editor.windowManager.open({
+				                title: editor.getLang('coco_shortcodes_tinymce.tabs_add'),
+				                // BEGIN body popup
+				                body: [	{	type: 'label',
+					                    	name: 'tabs_label',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.tabs_label')
+										},
+				                
+				                		{	type: 'listbox',
+					                    	name: 'tabs_number',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.tabs_number'),
+					                    	values:[	{	text: '2', value: 2},
+					                    				{	text: '3', value: 3},
+								            			{	text: '4', value: 4},
+								            			{	text: '5', value: 5},
+					                    				{	text: '6', value: 6},
+								            			{	text: '7', value: 7},
+								            			{	text: '8', value: 8},
+					                    				{	text: '9', value: 9},
+								            			{	text: '10', value: 10}
+												    ]
+										}
+
+				                ],
+				                // END body popup
+				                
+				                onsubmit: function(e) {
+				                
+				                	var res = '';
+				                	
+				                	res += '[' + editor.getLang('coco_shortcodes_tinymce.tabs_shortcode') + ']<br>';
+				                	
+				                	for (i = 1; i <= e.data.tabs_number; i++) { 
+									    res += '[' + editor.getLang('coco_shortcodes_tinymce.single_tab_shortcode') + ' ' + editor.getLang('coco_shortcodes_tinymce.tab_label_att') + '="' + editor.getLang('coco_shortcodes_tinymce.tab_label_value') + ' ' + i + '"]';
+									    res += editor.getLang('coco_shortcodes_tinymce.tab_content');
+									    res += '[/' + editor.getLang('coco_shortcodes_tinymce.single_tab_shortcode') + ']<br>';
+									}
+				                	res += '[/' + editor.getLang('coco_shortcodes_tinymce.tabs_shortcode') + ']<br>';
+				                					                	
+				                    editor.insertContent(res);
+				                }
+				                
+				                
+				            });
+				            // END Popup
+				        },
+            			// END onclick
+            		},
+					// END tabs
+            		
             		
 	        ]
             

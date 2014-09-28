@@ -5,6 +5,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 // Thanks to my friend Rémi Corson for those snippets :
 // http://www.remicorson.com/how-to-create-translation-ready-shortcodes/
 
+function coco_shortcodes_register(){
+   add_shortcode(_x('cocorico_column', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_column');
+   add_shortcode(_x('cocorico_message', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_message');
+   add_shortcode(_x('cocorico_button', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_button');
+   add_shortcode(_x('cocorico_tabs', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tabs');
+   add_shortcode(_x('cocorico_tab', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tab');
+}
+add_action( 'init', 'coco_shortcodes_register');
+
+
 // Column Shortcode generator
 if(!function_exists('coco_shortcodes_column')){
 	function coco_shortcodes_column($atts, $content = null) {
@@ -176,11 +186,59 @@ if (!function_exists('coco_shortcodes_button')){
 	}
 }
 
-function coco_shortcodes_register(){
-   add_shortcode(_x('cocorico_column', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_column');
-   add_shortcode(_x('cocorico_message', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_message');
-   add_shortcode(_x('cocorico_button', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_button');
+// Tabs Shortcode generator
+if (!function_exists('coco_shortcodes_tabs')){
+	function coco_shortcodes_tabs($atts, $content = null){
+		
+		$id = rand( 1, 1000 );
+		
+		// Load jquery tabs
+		wp_enqueue_script('jquery-ui-tabs');
+		
+		
+		// Thanks to https://stackoverflow.com/questions/23307032/create-wordpress-shortcode-for-jquery-ui-tabs
+		
+		preg_match_all( '/tab ' . _x('label', 'shortcode attribute name', 'cocoshortcodes') . '="([^\"]+)"/i', $content, $matche, PREG_OFFSET_CAPTURE );
+
+	    $tab_title = array();
+	
+	    if( isset($matche[1]) ) {
+	        $tab_title = $matche[1];
+	    }
+	
+	    $res = '';
+	
+	    if( count($tab_title) ) {
+	        $res .= '<div id="tabs_' . $id . '" class="cs_tabs">';
+	        $res .= '<ul class="nav cs_clear">';
+	        foreach( $tab_title as $tab ){
+	            $res .= '<li><a href="#tabs_'. str_replace('-', '_', sanitize_title( $tab[0] )) .'">' . $tab[0] . '</a></li>';
+	        }
+	        $res .= '</ul>' . do_shortcode( $content ) . '</div>';
+	    } else {
+	        $res .= do_shortcode( $content );
+	    }
+	
+	    return $res;
+	}
 }
-add_action( 'init', 'coco_shortcodes_register');
+
+// Single Tab Shortcode 
+if (!function_exists('coco_shortcodes_tab')){
+	function coco_shortcodes_tab($atts, $content = null){
+	
+		extract(shortcode_atts(array(
+			_x('label', 'shortcode attribute name', 'cocoshortcodes') => _x('Tab label', 'shortcode attribute value', 'cocoshortcodes'),
+		), $atts));
+		
+		$label = ${_x('label', 'shortcode attribute name', 'cocoshortcodes')};
+		
+		$res = '<div class="tab cs_tab_content" id="tabs_'. str_replace('-', '_', sanitize_title( $label )) .'">'. do_shortcode( $content ) .'</div>';
+		
+		return $res;
+	}
+}
+
+
 
 
