@@ -143,6 +143,18 @@ function coco_shortcodes_tinymce_translation() {
         
         'separator_shortcode'	=> _x('cocorico_separator', 'shortcode name', 'cocoshortcodes'),
         
+        // Toggle Shortcode strings
+        
+        'toggle'				=> _x('Toggle', 'tinymce button label', 'cocoshortcodes'),
+        'toggle_add'			=> _x('Add a toggle', 'tinymce popup title', 'cocoshortcodes'),
+        
+        'toggle_title_att'		=> _x('title', 'shortcode attribute name', 'cocoshortcodes'),
+        'toggle_title'			=> _x('Title', 'tinymce popup attribute label', 'cocoshortcodes'),
+        
+        'toggle_content'		=> _x('Content', 'tinymce popup input label', 'cocoshortcodes'),
+        
+        'toggle_shortcode'		=> _x('cocorico_toggle', 'shortcode name', 'cocoshortcodes'),
+        
 		
     );
     $locale = _WP_Editors::$mce_locale;

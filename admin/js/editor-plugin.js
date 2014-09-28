@@ -357,6 +357,52 @@
             			// END onclick
             		},
 					// END separator
+					
+					// BEGIN toggle
+            		{	text: editor.getLang('coco_shortcodes_tinymce.toggle'),
+            			
+            			// BEGIN onclick
+            			onclick: function() {
+            			
+				            // BEGIN Popup
+				            editor.windowManager.open({
+				                title: editor.getLang('coco_shortcodes_tinymce.toggle_add'),
+				                // BEGIN body popup
+				                body: [	{	type: 'textbox',
+					                    	name: 'toggle_title',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.toggle_title'),
+										},
+										{	type: 'textbox',
+					                    	name: 'toggle_content',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.toggle_content'),
+					                    	multiline: true,
+					                    	minWidth: 300,
+					                    	minHeight: 100
+										}
+				                ],
+				                // END body popup
+				                
+				                onsubmit: function(e) {
+				                
+				                	var res = '';
+				                	
+				                	res += '[' + editor.getLang('coco_shortcodes_tinymce.toggle_shortcode') + ' ';
+									res += editor.getLang('coco_shortcodes_tinymce.toggle_title_att') + '="' + e.data.toggle_title + '"]<br>';
+				                	
+				                	res += e.data.toggle_content + '<br>';
+				                	
+				                	res += '[/' + editor.getLang('coco_shortcodes_tinymce.toggle_shortcode') + ']';
+				                	              	
+				                    editor.insertContent(res);
+				                }
+				                
+				                
+				            });
+				            // END Popup
+				        },
+            			// END onclick
+            		},
+					// END toggle
             		
 	        ]
             

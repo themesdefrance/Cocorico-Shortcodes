@@ -268,12 +268,13 @@
   z-index: 5;
 }
 
-/* line 269, scss/style.scss */
+/* Separators */
+/* line 271, scss/style.scss */
 .cs_separator {
   margin: 30px 0;
   width: 100%;
 }
-/* line 274, scss/style.scss */
+/* line 276, scss/style.scss */
 .cs_separator hr {
   display: block;
   width: 100%;
@@ -282,19 +283,66 @@
   background: none;
   border: none;
 }
-/* line 282, scss/style.scss */
+/* line 284, scss/style.scss */
 .cs_separator hr.cs_separator_solid {
   border-top: 2px solid #ebeded;
 }
-/* line 286, scss/style.scss */
+/* line 288, scss/style.scss */
 .cs_separator hr.cs_separator_dashed {
   border-top: 2px dashed #ebeded;
 }
-/* line 290, scss/style.scss */
+/* line 292, scss/style.scss */
 .cs_separator hr.cs_separator_dotted {
   border-top: 2px dotted #ebeded;
 }
-/* line 294, scss/style.scss */
+/* line 296, scss/style.scss */
 .cs_separator hr.cs_separator_double {
   border-top: 2px double #ebeded;
+}
+
+/* Toggle */
+/* line 304, scss/style.scss */
+.cs_toggle {
+  margin: 0 0 20px 0;
+}
+/* line 308, scss/style.scss */
+.cs_toggle p.cs_toggle_button {
+  background-color: #ffffff;
+  border: 1px solid #ebeded;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+/* line 317, scss/style.scss */
+.cs_toggle p.cs_toggle_button:before {
+  content: '+';
+  margin-right: 10px;
+}
+/* line 322, scss/style.scss */
+.cs_toggle p.cs_toggle_button:hover {
+  background-color: #ebeded;
+}
+/* line 326, scss/style.scss */
+.cs_toggle p.cs_toggle_button.toggle-active {
+  border-bottom: none;
+  background-color: #ebeded;
+}
+/* line 329, scss/style.scss */
+.cs_toggle p.cs_toggle_button.toggle-active:before {
+  content: '-';
+}
+/* line 334, scss/style.scss */
+.cs_toggle p.cs_toggle_button a {
+  color: #141414;
+}
+/* line 337, scss/style.scss */
+.cs_toggle p.cs_toggle_button a:hover {
+  text-decoration: none;
+}
+/* line 343, scss/style.scss */
+.cs_toggle .cs_toggle_content {
+  border: 1px solid #ebeded;
+  padding: 20px;
 }

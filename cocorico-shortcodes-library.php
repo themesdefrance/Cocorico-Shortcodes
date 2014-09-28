@@ -12,6 +12,7 @@ function coco_shortcodes_register(){
    add_shortcode(_x('cocorico_tabs', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tabs');
    add_shortcode(_x('cocorico_tab', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tab');
    add_shortcode(_x('cocorico_separator', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_separator');
+   add_shortcode(_x('cocorico_toggle', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_toggle');
 }
 add_action( 'init', 'coco_shortcodes_register');
 
@@ -191,11 +192,8 @@ if (!function_exists('coco_shortcodes_button')){
 if (!function_exists('coco_shortcodes_tabs')){
 	function coco_shortcodes_tabs($atts, $content = null){
 		
-		$id = rand( 1, 1000 );
-		
 		// Load jquery tabs
 		wp_enqueue_script('jquery-ui-tabs');
-		
 		
 		// Thanks to https://stackoverflow.com/questions/23307032/create-wordpress-shortcode-for-jquery-ui-tabs
 		
@@ -210,7 +208,7 @@ if (!function_exists('coco_shortcodes_tabs')){
 	    $res = '';
 	
 	    if( count($tab_title) ) {
-	        $res .= '<div id="cs_tabs_' . $id . '" class="cs_tabs">';
+	        $res .= '<div class="cs_tabs">';
 	        $res .= '<ul class="nav cs_clear">';
 	        foreach( $tab_title as $tab ){
 	            $res .= '<li><a href="#cs_tabs_'. str_replace('-', '_', sanitize_title( $tab[0] )) .'">' . $tab[0] . '</a></li>';
@@ -275,4 +273,23 @@ if (!function_exists('coco_shortcodes_separator')){
 	}
 }
 
+// Toggle Shortcode Generator
+if (!function_exists('coco_shortcodes_toggle')){
+	function coco_shortcodes_toggle($atts, $content = null) {
+		
+		extract(shortcode_atts(array(
+			_x('title', 'shortcode attribute name', 'cocoshortcodes') => _x('Toggle title', 'shortcode attribute value', 'cocoshortcodes'),
+		), $atts));
+		
+		$title = ${_x('title', 'shortcode attribute name', 'cocoshortcodes')};
+		
+		$res = '<div class="cs_toggle">';
+		$res .= '<p class="cs_toggle_button"><a href="#">'.$title.'</a></p>';
+		$res .= '<div class="cs_toggle_content">';
+		$res .= do_shortcode($content);
+		$res .= '</div></div>';
+		
+	   return $res;
+	}
+}
 
