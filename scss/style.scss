@@ -307,7 +307,7 @@ $cs_grey : #ebeded;
 	
 	p.cs_toggle_button{
 		background-color:#ffffff;
-		border: 1px solid #ebeded;
+		border: 1px solid $cs_grey;
 		display: block;
 		width:100%;
 		margin:0;
@@ -347,5 +347,24 @@ $cs_grey : #ebeded;
 	}
 }
 
+/* Call to action */
 
+.cs_calltoaction{
+	border:1px solid $cs_grey;
+	padding:20px;
+	margin:0 0 20px 0;
+	
+	.cs_calltoaction_content{
+		margin:0 0 10px 0;
+	}
+	
+	.cs_button_calltoaction{
+		padding:10px 20px;
+		margin:0;
+	}
+	
+	p:last-child{
+		margin:0;
+	}
+}
 

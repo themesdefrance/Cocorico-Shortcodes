@@ -11,8 +11,6 @@ function coco_shortcodes_tinymce_translation() {
         'column_add'			=> _x('Add a column', 'tinymce popup title', 'cocoshortcodes'),
         
         'column_size'			=> _x('Size', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'column_size_att'		=> _x('size', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'column_one_half'		=> _x('one_half', 'shortcode attribute value', 'cocoshortcodes'),
         'column_one_third'		=> _x('one_third', 'shortcode attribute value', 'cocoshortcodes'),
         'column_two_thirds'		=> _x('two_thirds', 'shortcode attribute value', 'cocoshortcodes'),
@@ -20,8 +18,6 @@ function coco_shortcodes_tinymce_translation() {
         'column_three_fourths'	=> _x('three_fourths', 'shortcode attribute value', 'cocoshortcodes'),
         
         'column_position'		=> _x('Position', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'column_position_att'	=> _x('position', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'column_first'			=> _x('First', 'tinymce popup select label', 'cocoshortcodes'),
         'column_first_value'	=> _x('first', 'shortcode attribute value', 'cocoshortcodes'),
         'column_middle'			=> _x('Middle', 'tinymce popup select label', 'cocoshortcodes'),
@@ -32,6 +28,8 @@ function coco_shortcodes_tinymce_translation() {
         'column_content'		=> _x('Content', 'tinymce popup input label', 'cocoshortcodes'),
         
         'column_shortcode'		=> _x('cocorico_column', 'shortcode name', 'cocoshortcodes'),
+        'column_size_att'		=> _x('size', 'shortcode attribute name', 'cocoshortcodes'),
+        'column_position_att'	=> _x('position', 'shortcode attribute name', 'cocoshortcodes'),
         
         // Column shortcode strings
         
@@ -39,8 +37,6 @@ function coco_shortcodes_tinymce_translation() {
         'message_add'			=> _x('Add a message box', 'tinymce popup title', 'cocoshortcodes'),
         
         'message_type'			=> _x('Type', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'message_type_att'		=> _x('type', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'message_info'			=> _x('Info', 'tinymce popup select label', 'cocoshortcodes'),
         'message_info_value'	=> _x('info', 'shortcode attribute value', 'cocoshortcodes'),
         'message_alert'			=> _x('Alert', 'tinymce popup select label', 'cocoshortcodes'),
@@ -53,6 +49,7 @@ function coco_shortcodes_tinymce_translation() {
         'message_content'		=> _x('Content', 'tinymce popup input label', 'cocoshortcodes'),
         
         'message_shortcode'		=> _x('cocorico_message', 'shortcode name', 'cocoshortcodes'),
+        'message_type_att'		=> _x('type', 'shortcode attribute name', 'cocoshortcodes'),
         
         // Button shortcode strings
         
@@ -60,13 +57,9 @@ function coco_shortcodes_tinymce_translation() {
         'button_add'			=> _x('Add a button', 'tinymce popup title', 'cocoshortcodes'),
         
         'button_url'			=> _x('URL', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'button_url_att'		=> _x('url', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'button_label'			=> _x('Label', 'tinymce popup attribute label', 'cocoshortcodes'),
         
         'button_target'			=> _x('URL Target', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'button_target_att'		=> _x('target', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'button_link_same'		=> _x('Current window', 'tinymce popup select label', 'cocoshortcodes'),
         'button_link_same_value'=> _x('current_window', 'shortcode attribute value', 'cocoshortcodes'),
         'button_link_other'		=> _x('New window', 'tinymce popup select label', 'cocoshortcodes'),
@@ -75,8 +68,6 @@ function coco_shortcodes_tinymce_translation() {
         'button_style_label'	=> _x('Styling', 'tinymce section title', 'cocoshortcodes'),
         
         'button_size'			=> _x('Size', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'button_size_att'		=> _x('size', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'button_small'			=> _x('Small', 'tinymce popup select label', 'cocoshortcodes'),
         'button_small_value'	=> _x('small', 'shortcode attribute value', 'cocoshortcodes'),
         'button_medium'			=> _x('Medium', 'tinymce popup select label', 'cocoshortcodes'),
@@ -85,8 +76,6 @@ function coco_shortcodes_tinymce_translation() {
         'button_large_value'	=> _x('large', 'shortcode attribute value', 'cocoshortcodes'),
         
         'button_color'			=> _x('Color', 'tinymce popup attribute label', 'cocoshortcodes'),
-        'button_color_att'		=> _x('color', 'shortcode attribute name', 'cocoshortcodes'),
-        
         'button_grey'			=> _x('Grey', 'tinymce popup select label', 'cocoshortcodes'),
         'button_grey_value'		=> _x('grey', 'shortcode attribute value', 'cocoshortcodes'),
         'button_purple'			=> _x('Purple', 'tinymce popup select label', 'cocoshortcodes'),
@@ -109,18 +98,22 @@ function coco_shortcodes_tinymce_translation() {
         'button_nightblue_value'=> _x('nightblue', 'shortcode attribute value', 'cocoshortcodes'),
         
         'button_shortcode'		=> _x('cocorico_button', 'shortcode name', 'cocoshortcodes'),
+        'button_url_att'		=> _x('url', 'shortcode attribute name', 'cocoshortcodes'),
+        'button_target_att'		=> _x('target', 'shortcode attribute name', 'cocoshortcodes'),
+        'button_size_att'		=> _x('size', 'shortcode attribute name', 'cocoshortcodes'),
+        'button_color_att'		=> _x('color', 'shortcode attribute name', 'cocoshortcodes'),
 		
 		// Tabs shortcode strings
 		
 		'tabs'					=> _x('Tabs', 'tinymce button label', 'cocoshortcodes'),
         'tabs_add'				=> _x('Add tabs', 'tinymce popup title', 'cocoshortcodes'),
-        'tabs_label'			=> _x('Select how many tabs you want to insert', 'tinymce section title', 'cocoshortcodes'),
         
+        'tabs_label'			=> _x('Select how many tabs you want to insert', 'tinymce section title', 'cocoshortcodes'),
         'tabs_number'			=> _x('Number', 'tinymce popup attribute label', 'cocoshortcodes'),
         
-        'tab_label_att'			=> _x('label', 'shortcode attribute name', 'cocoshortcodes'),
         'tab_label_value'		=> _x('Tab label', 'shortcode attribute value', 'cocoshortcodes'),
         'tab_content'			=> _x('Tab content', 'shortcode default content', 'cocoshortcodes'),
+        'tab_label_att'			=> _x('label', 'shortcode attribute name', 'cocoshortcodes'),
         
         'tabs_shortcode'		=> _x('cocorico_tabs', 'shortcode name', 'cocoshortcodes'),
         'single_tab_shortcode'	=> _x('cocorico_tab', 'shortcode name', 'cocoshortcodes'),
@@ -131,7 +124,6 @@ function coco_shortcodes_tinymce_translation() {
         'separator_add'			=> _x('Add a separator', 'tinymce popup title', 'cocoshortcodes'),
         'separator_style'		=> _x('Choose a style for this separator', 'tinymce popup attribute label', 'cocoshortcodes'),
         
-        'separator_style_att'	=> _x('style', 'shortcode attribute name', 'cocoshortcodes'),
         'separator_solid'		=> _x('Solid', 'tinymce popup select label', 'cocoshortcodes'),
         'separator_solid_value'	=> _x('solid', 'shortcode attribute value', 'cocoshortcodes'),
         'separator_dashed'		=> _x('Dashed', 'tinymce popup select label', 'cocoshortcodes'),
@@ -142,18 +134,37 @@ function coco_shortcodes_tinymce_translation() {
         'separator_double_value'=> _x('double', 'shortcode attribute value', 'cocoshortcodes'),
         
         'separator_shortcode'	=> _x('cocorico_separator', 'shortcode name', 'cocoshortcodes'),
+        'separator_style_att'	=> _x('style', 'shortcode attribute name', 'cocoshortcodes'),
         
         // Toggle Shortcode strings
         
         'toggle'				=> _x('Toggle', 'tinymce button label', 'cocoshortcodes'),
         'toggle_add'			=> _x('Add a toggle', 'tinymce popup title', 'cocoshortcodes'),
         
-        'toggle_title_att'		=> _x('title', 'shortcode attribute name', 'cocoshortcodes'),
         'toggle_title'			=> _x('Title', 'tinymce popup attribute label', 'cocoshortcodes'),
         
         'toggle_content'		=> _x('Content', 'tinymce popup input label', 'cocoshortcodes'),
         
         'toggle_shortcode'		=> _x('cocorico_toggle', 'shortcode name', 'cocoshortcodes'),
+        'toggle_title_att'		=> _x('title', 'shortcode attribute name', 'cocoshortcodes'),
+        
+        // Call to action Shortcode strings
+        
+        'cta'					=> _x('Call to action', 'tinymce button label', 'cocoshortcodes'),
+        'cta_add'				=> _x('Add a call to action', 'tinymce popup title', 'cocoshortcodes'),
+        
+        'cta_title'				=> _x('Title', 'tinymce popup attribute label', 'cocoshortcodes'),
+        'cta_url'				=> _x('URL', 'tinymce popup attribute label', 'cocoshortcodes'),
+        'cta_label'				=> _x('Button\'s label', 'tinymce popup attribute label', 'cocoshortcodes'),
+        'cta_color'				=> _x('Button\'s color', 'tinymce popup attribute label', 'cocoshortcodes'),
+        
+        'cta_content'			=> _x('Content', 'tinymce popup input label', 'cocoshortcodes'),
+        
+        'cta_shortcode'			=> _x('cocorico_calltoaction', 'shortcode name', 'cocoshortcodes'),
+        'cta_title_att'			=> _x('title', 'shortcode attribute name', 'cocoshortcodes'),
+        'cta_url_att'			=> _x('url', 'shortcode attribute name', 'cocoshortcodes'),
+        'cta_label_att'			=> _x('label', 'shortcode attribute name', 'cocoshortcodes'),
+        'cta_color_att'			=> _x('color', 'shortcode attribute name', 'cocoshortcodes'),
         
 		
     );

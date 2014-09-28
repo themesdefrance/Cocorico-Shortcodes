@@ -346,3 +346,24 @@
   border: 1px solid #ebeded;
   padding: 20px;
 }
+
+/* Call to action */
+/* line 352, scss/style.scss */
+.cs_calltoaction {
+  border: 1px solid #ebeded;
+  padding: 20px;
+  margin: 0 0 20px 0;
+}
+/* line 357, scss/style.scss */
+.cs_calltoaction .cs_calltoaction_content {
+  margin: 0 0 10px 0;
+}
+/* line 361, scss/style.scss */
+.cs_calltoaction .cs_button_calltoaction {
+  padding: 10px 20px;
+  margin: 0;
+}
+/* line 366, scss/style.scss */
+.cs_calltoaction p:last-child {
+  margin: 0;
+}

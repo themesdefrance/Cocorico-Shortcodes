@@ -13,6 +13,7 @@ function coco_shortcodes_register(){
    add_shortcode(_x('cocorico_tab', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tab');
    add_shortcode(_x('cocorico_separator', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_separator');
    add_shortcode(_x('cocorico_toggle', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_toggle');
+   add_shortcode(_x('cocorico_calltoaction', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_calltoaction');
 }
 add_action( 'init', 'coco_shortcodes_register');
 
@@ -285,11 +286,72 @@ if (!function_exists('coco_shortcodes_toggle')){
 		
 		$res = '<div class="cs_toggle">';
 		$res .= '<p class="cs_toggle_button"><a href="#">'.$title.'</a></p>';
-		$res .= '<div class="cs_toggle_content">';
-		$res .= do_shortcode($content);
-		$res .= '</div></div>';
+		$res .= '<div class="cs_toggle_content">' . do_shortcode($content) . '</div>';
+		$res .= '</div>';
 		
 	   return $res;
 	}
 }
 
+// Call to action Shortcode Generator
+if (!function_exists('coco_shortcodes_calltoaction')){
+	function coco_shortcodes_calltoaction($atts, $content = null) {
+		
+		extract(shortcode_atts(array(
+			_x('title', 'shortcode attribute name', 'cocoshortcodes') => '',
+			_x('url', 'shortcode attribute name', 'cocoshortcodes') => '',
+			_x('label', 'shortcode attribute name', 'cocoshortcodes') => '',
+			_x('color', 'shortcode attribute name', 'cocoshortcodes') => '',
+		), $atts));
+		
+		$title = ${_x('title', 'shortcode attribute name', 'cocoshortcodes')};
+		$url = ${_x('url', 'shortcode attribute name', 'cocoshortcodes')};
+		$label = ${_x('label', 'shortcode attribute name', 'cocoshortcodes')};
+		$color = ${_x('color', 'shortcode attribute name', 'cocoshortcodes')};
+		
+		$classes = 'cs_button cs_button_calltoaction';
+		
+		switch($color){
+			case _x('purple', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_purple';
+			break;
+			case _x('blue', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_blue';
+			break;
+			case _x('turquoise', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_turquoise';
+			break;
+			case _x('green', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_green';
+			break;
+			case _x('yellow', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_yellow';
+			break;
+			case _x('orange', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_orange';
+			break;
+			case _x('red', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_red';
+			break;
+			case _x('pink', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_pink';
+			break;
+			case _x('grey', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_grey';
+			break;
+			case _x('nightblue', 'shortcode attribute value', 'cocoshortcodes') :
+				$classes .= ' cs_button_nightblue';
+			break;
+			default :
+			 	$classes .= ' cs_button_grey';
+		}
+		
+		$res = '<div class="cs_calltoaction">';
+		$res .= '<h3 class="cs_calltoaction_title">' . $title . '</h3>';
+		$res .= '<p class="cs_calltoaction_content">' . do_shortcode($content) . '</p>';
+		$res .= '<a href="' . $url . '" class="' . $classes . '">' . $label . '</a>';
+		$res .= '</div>';
+		
+	   return $res;
+	}
+}

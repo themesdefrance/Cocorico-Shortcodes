@@ -8,6 +8,38 @@
 		
 		var buttonstyle = "background:url('" + cs_url + "img/cocorico.png') no-repeat 5px 2px";
 		
+		var buttoncolors = [	{	text: editor.getLang('coco_shortcodes_tinymce.button_grey'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_grey_value')
+                				},
+                				{	text: editor.getLang('coco_shortcodes_tinymce.button_purple'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_purple_value')
+                				},
+                				{	text: editor.getLang('coco_shortcodes_tinymce.button_blue'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_blue_value')
+                				},
+		            			{	text: editor.getLang('coco_shortcodes_tinymce.button_turquoise'),
+		            				value: editor.getLang('coco_shortcodes_tinymce.button_turquoise_value')
+		            			},
+		            			{	text: editor.getLang('coco_shortcodes_tinymce.button_green'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_green_value')
+                				},
+                				{	text: editor.getLang('coco_shortcodes_tinymce.button_yellow'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_yellow_value')
+                				},
+                				{	text: editor.getLang('coco_shortcodes_tinymce.button_orange'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_orange_value')
+                				},
+                				{	text: editor.getLang('coco_shortcodes_tinymce.button_red'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_red_value')
+                				},
+		            			{	text: editor.getLang('coco_shortcodes_tinymce.button_pink'),
+		            				value: editor.getLang('coco_shortcodes_tinymce.button_pink_value')
+		            			},
+                				{	text: editor.getLang('coco_shortcodes_tinymce.button_nightblue'),
+                					value: editor.getLang('coco_shortcodes_tinymce.button_nightblue_value')
+                				}
+						    ];
+		
         editor.addButton( 'coco_shortcodes_button', {
 			type: 'menubutton',
             style: buttonstyle,
@@ -191,37 +223,7 @@
 					                    {	type: 'listbox',
 					                    	name: 'button_color',
 					                    	label: editor.getLang('coco_shortcodes_tinymce.button_color'),
-					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.button_grey'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_grey_value')
-					                    				},
-					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_purple'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_purple_value')
-					                    				},
-					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_blue'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_blue_value')
-					                    				},
-								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_turquoise'),
-								            				value: editor.getLang('coco_shortcodes_tinymce.button_turquoise_value')
-								            			},
-								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_green'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_green_value')
-					                    				},
-					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_yellow'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_yellow_value')
-					                    				},
-					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_orange'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_orange_value')
-					                    				},
-					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_red'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_red_value')
-					                    				},
-								            			{	text: editor.getLang('coco_shortcodes_tinymce.button_pink'),
-								            				value: editor.getLang('coco_shortcodes_tinymce.button_pink_value')
-								            			},
-					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_nightblue'),
-					                    					value: editor.getLang('coco_shortcodes_tinymce.button_nightblue_value')
-					                    				}
-												    ]
+					                    	values: buttoncolors
 										},
 
 				                ],
@@ -403,6 +405,72 @@
             			// END onclick
             		},
 					// END toggle
+					
+					
+					// BEGIN call to action
+            		{	text: editor.getLang('coco_shortcodes_tinymce.cta'),
+            			
+            			// BEGIN onclick
+            			onclick: function() {
+            			
+				            // BEGIN Popup
+				            editor.windowManager.open({
+				                title: editor.getLang('coco_shortcodes_tinymce.cta_add'),
+				                // BEGIN body popup
+				                body: [	{	type: 'textbox',
+					                    	name: 'cta_title',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.cta_title'),
+										},
+										{	type: 'textbox',
+					                    	name: 'cta_content',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.cta_content'),
+					                    	multiline: true,
+					                    	minWidth: 300,
+					                    	minHeight: 100
+										},
+										{	type: 'textbox',
+					                    	name: 'cta_url',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.cta_url'),
+										},
+										{	type: 'textbox',
+					                    	name: 'cta_label',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.cta_label'),
+										},
+										{	type: 'listbox',
+					                    	name: 'cta_color',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.cta_color'),
+					                    	values : buttoncolors
+										},
+										
+										
+				                ],
+				                // END body popup
+				                
+				                onsubmit: function(e) {
+				                
+				                	var res = '';
+				                	
+				                	res += '[' + editor.getLang('coco_shortcodes_tinymce.cta_shortcode') + ' ';
+				                	
+									res += editor.getLang('coco_shortcodes_tinymce.cta_title_att') + '="' + e.data.cta_title + '" ';
+				                	res += editor.getLang('coco_shortcodes_tinymce.cta_url_att') + '="' + e.data.cta_url + '" ';
+				                	res += editor.getLang('coco_shortcodes_tinymce.cta_color_att') + '="' + e.data.cta_color + '" ';
+				                	res += editor.getLang('coco_shortcodes_tinymce.cta_label_att') + '="' + e.data.cta_label + '"]<br>';
+				                	
+				                	res += e.data.cta_content + '<br>';
+				                	
+				                	res += '[/' + editor.getLang('coco_shortcodes_tinymce.cta_shortcode') + ']';
+				                	              	
+				                    editor.insertContent(res);
+				                }
+				                
+				                
+				            });
+				            // END Popup
+				        },
+            			// END onclick
+            		},
+					// END call to action
             		
 	        ]
             
