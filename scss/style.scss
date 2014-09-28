@@ -1,3 +1,6 @@
+$cs_grey : #ebeded;
+
+
 /* Commons */
 .cs_clear{
 	clear:both;
@@ -218,7 +221,7 @@
 			display:inline-block;
 			margin:0;
 			padding:0;
-			background:#ebeded;
+			background:$cs_grey;
 			z-index:10;
 			
 			&.ui-tabs-active,
@@ -235,7 +238,7 @@
 			}
 			
 			a{
-				border: 1px solid #ebeded;
+				border: 1px solid $cs_grey;
 				border-bottom-color:transparent;
 				position: relative;
 				display: inline-block;
@@ -254,11 +257,43 @@
 	}
 	
 	.cs_tab_content{
-		border: 1px solid #ebeded;
+		border: 1px solid $cs_grey;
 		padding: 20px;
 		top: -1px;
 		position: relative;
+		width: 100%;
 		z-index:5;
+	}
+}
+
+.cs_separator{
+	
+	margin:30px 0;
+	width: 100%;
+	
+	hr{
+		display:block;
+		width:100%;
+		height:0;
+		margin:0;
+		background:none;
+		border: none;
+	
+		&.cs_separator_solid{
+			border-top:2px solid $cs_grey;
+		}
+		
+		&.cs_separator_dashed{
+			border-top:2px dashed $cs_grey;
+		}
+		
+		&.cs_separator_dotted{
+			border-top:2px dotted $cs_grey;
+		}
+		
+		&.cs_separator_double{
+			border-top:2px double $cs_grey;
+		}
 	}
 }
 

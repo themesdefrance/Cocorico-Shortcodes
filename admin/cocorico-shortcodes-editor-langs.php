@@ -112,7 +112,7 @@ function coco_shortcodes_tinymce_translation() {
 		
 		// Tabs shortcode strings
 		
-		'tabs'					=> _x('Tabs', 'tinymce tabs label', 'cocoshortcodes'),
+		'tabs'					=> _x('Tabs', 'tinymce button label', 'cocoshortcodes'),
         'tabs_add'				=> _x('Add tabs', 'tinymce popup title', 'cocoshortcodes'),
         'tabs_label'			=> _x('Select how many tabs you want to insert', 'tinymce section title', 'cocoshortcodes'),
         
@@ -124,6 +124,25 @@ function coco_shortcodes_tinymce_translation() {
         
         'tabs_shortcode'		=> _x('cocorico_tabs', 'shortcode name', 'cocoshortcodes'),
         'single_tab_shortcode'	=> _x('cocorico_tab', 'shortcode name', 'cocoshortcodes'),
+        
+        // Separator Shortcode strings
+        
+        'separator'				=> _x('Separator', 'tinymce button label', 'cocoshortcodes'),
+        'separator_add'			=> _x('Add a separator', 'tinymce popup title', 'cocoshortcodes'),
+        'separator_style'		=> _x('Choose a style for this separator', 'tinymce popup attribute label', 'cocoshortcodes'),
+        
+        'separator_style_att'	=> _x('style', 'shortcode attribute name', 'cocoshortcodes'),
+        'separator_solid'		=> _x('Solid', 'tinymce popup select label', 'cocoshortcodes'),
+        'separator_solid_value'	=> _x('solid', 'shortcode attribute value', 'cocoshortcodes'),
+        'separator_dashed'		=> _x('Dashed', 'tinymce popup select label', 'cocoshortcodes'),
+        'separator_dashed_value'=> _x('dashed', 'shortcode attribute value', 'cocoshortcodes'),
+        'separator_dotted'		=> _x('Dotted', 'tinymce popup select label', 'cocoshortcodes'),
+        'separator_dotted_value'=> _x('dotted', 'shortcode attribute value', 'cocoshortcodes'),
+        'separator_double'		=> _x('Double', 'tinymce popup select label', 'cocoshortcodes'),
+        'separator_double_value'=> _x('double', 'shortcode attribute value', 'cocoshortcodes'),
+        
+        'separator_shortcode'	=> _x('cocorico_separator', 'shortcode name', 'cocoshortcodes'),
+        
 		
     );
     $locale = _WP_Editors::$mce_locale;

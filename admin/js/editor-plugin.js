@@ -277,12 +277,7 @@
 					                    	values:[	{	text: '2', value: 2},
 					                    				{	text: '3', value: 3},
 								            			{	text: '4', value: 4},
-								            			{	text: '5', value: 5},
-					                    				{	text: '6', value: 6},
-								            			{	text: '7', value: 7},
-								            			{	text: '8', value: 8},
-					                    				{	text: '9', value: 9},
-								            			{	text: '10', value: 10}
+								            			{	text: '5', value: 5}
 												    ]
 										}
 
@@ -313,6 +308,55 @@
             		},
 					// END tabs
             		
+            		// BEGIN separator
+            		{	text: editor.getLang('coco_shortcodes_tinymce.separator'),
+            			
+            			// BEGIN onclick
+            			onclick: function() {
+            			
+				            // BEGIN Popup
+				            editor.windowManager.open({
+				                title: editor.getLang('coco_shortcodes_tinymce.separator_add'),
+				                // BEGIN body popup
+				                body: [	{	type: 'listbox',
+					                    	name: 'separator_style',
+					                    	label: editor.getLang('coco_shortcodes_tinymce.separator_style'),
+					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.separator_solid'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.separator_solid_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.separator_dashed'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.separator_dashed_value')
+					                    				},
+					                    				{	text: editor.getLang('coco_shortcodes_tinymce.separator_dotted'),
+					                    					value: editor.getLang('coco_shortcodes_tinymce.separator_dotted_value')
+					                    				},
+								            			{	text: editor.getLang('coco_shortcodes_tinymce.separator_double'),
+								            				value: editor.getLang('coco_shortcodes_tinymce.separator_double_value')
+								            			}
+												    ]
+										}
+
+				                ],
+				                // END body popup
+				                
+				                onsubmit: function(e) {
+				                
+				                	var res = '';
+				                	
+				                	res += '[' + editor.getLang('coco_shortcodes_tinymce.separator_shortcode') + ' ';
+				                	 
+									res += editor.getLang('coco_shortcodes_tinymce.separator_style_att') + '="' + e.data.separator_style + '"]<br>';
+				                					                	
+				                    editor.insertContent(res);
+				                }
+				                
+				                
+				            });
+				            // END Popup
+				        },
+            			// END onclick
+            		},
+					// END separator
             		
 	        ]
             

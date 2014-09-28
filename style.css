@@ -1,226 +1,226 @@
 /* Commons */
-/* line 2, scss/style.scss */
+/* line 5, scss/style.scss */
 .cs_clear {
   clear: both;
 }
 
 /* Columns */
-/* line 8, scss/style.scss */
+/* line 11, scss/style.scss */
 .cs_column {
   float: left;
   margin-right: 4%;
   width: 100%;
 }
 
-/* line 14, scss/style.scss */
+/* line 17, scss/style.scss */
 .cs_one_half {
   width: 48%;
 }
 
-/* line 18, scss/style.scss */
+/* line 21, scss/style.scss */
 .cs_one_third {
   width: 31.33333%;
   margin-right: 3%;
 }
 
-/* line 23, scss/style.scss */
+/* line 26, scss/style.scss */
 .cs_one_fourth {
   width: 23.5%;
   margin-right: 2%;
 }
 
-/* line 28, scss/style.scss */
+/* line 31, scss/style.scss */
 .cs_two_thirds {
   width: 65.66666%;
 }
 
-/* line 32, scss/style.scss */
+/* line 35, scss/style.scss */
 .cs_three_fourths {
   width: 72.5%;
 }
 
-/* line 36, scss/style.scss */
+/* line 39, scss/style.scss */
 .cs_one_half.cs_column_middle {
   margin-right: 2%;
 }
 
-/* line 40, scss/style.scss */
+/* line 43, scss/style.scss */
 .cs_column_last {
   margin-right: 0;
 }
 
 /* Messages box */
-/* line 45, scss/style.scss */
+/* line 48, scss/style.scss */
 .cs_message {
   padding: 30px;
   background-color: #f8f8f8;
   margin-bottom: 20px;
 }
-/* line 50, scss/style.scss */
+/* line 53, scss/style.scss */
 .cs_message p {
   margin: 0 !important;
   padding: 0 !important;
 }
-/* line 55, scss/style.scss */
+/* line 58, scss/style.scss */
 .cs_message a:hover {
   text-decoration: underline;
 }
-/* line 59, scss/style.scss */
+/* line 62, scss/style.scss */
 .cs_message.cs_message_info {
   background-color: #eff8fe;
   color: #5db2f0;
 }
-/* line 63, scss/style.scss */
+/* line 66, scss/style.scss */
 .cs_message.cs_message_info a, .cs_message.cs_message_info a:hover {
   color: #158ce3;
 }
-/* line 68, scss/style.scss */
+/* line 71, scss/style.scss */
 .cs_message.cs_message_alert {
   background-color: #fffae9;
   color: #f8ad0d;
 }
-/* line 72, scss/style.scss */
+/* line 75, scss/style.scss */
 .cs_message.cs_message_alert a, .cs_message.cs_message_alert a:hover {
   color: #ab7605;
 }
-/* line 77, scss/style.scss */
+/* line 80, scss/style.scss */
 .cs_message.cs_message_error {
   background-color: #ffeeee;
   color: #fc5355;
 }
-/* line 81, scss/style.scss */
+/* line 84, scss/style.scss */
 .cs_message.cs_message_error a, .cs_message.cs_message_error a:hover {
   color: #c40306;
 }
-/* line 86, scss/style.scss */
+/* line 89, scss/style.scss */
 .cs_message.cs_message_success {
   background-color: #ebfaf5;
   color: #38c994;
 }
-/* line 90, scss/style.scss */
+/* line 93, scss/style.scss */
 .cs_message.cs_message_success a, .cs_message.cs_message_success a:hover {
   color: #258763;
 }
 
 /* Buttons */
-/* line 98, scss/style.scss */
+/* line 101, scss/style.scss */
 .cs_button {
   color: #ffffff !important;
   display: inline-block;
   text-align: center;
   margin: 0 0 10px 0;
 }
-/* line 105, scss/style.scss */
+/* line 108, scss/style.scss */
 .cs_button:hover {
   text-decoration: none !important;
 }
-/* line 109, scss/style.scss */
+/* line 112, scss/style.scss */
 .cs_button.cs_button_purple {
   background-color: #8e44ad;
 }
-/* line 112, scss/style.scss */
+/* line 115, scss/style.scss */
 .cs_button.cs_button_purple:hover {
   background-color: #5c2c70;
 }
-/* line 117, scss/style.scss */
+/* line 120, scss/style.scss */
 .cs_button.cs_button_blue {
   background-color: #3498db;
 }
-/* line 120, scss/style.scss */
+/* line 123, scss/style.scss */
 .cs_button.cs_button_blue:hover {
   background-color: #1c6a9e;
 }
-/* line 125, scss/style.scss */
+/* line 128, scss/style.scss */
 .cs_button.cs_button_turquoise {
   background-color: #1abc9c;
 }
-/* line 128, scss/style.scss */
+/* line 131, scss/style.scss */
 .cs_button.cs_button_turquoise:hover {
   background-color: #10715e;
 }
-/* line 133, scss/style.scss */
+/* line 136, scss/style.scss */
 .cs_button.cs_button_green {
   background-color: #27ae60;
 }
-/* line 136, scss/style.scss */
+/* line 139, scss/style.scss */
 .cs_button.cs_button_green:hover {
   background-color: #17693a;
 }
-/* line 141, scss/style.scss */
+/* line 144, scss/style.scss */
 .cs_button.cs_button_yellow {
   background-color: #f1c40f;
 }
-/* line 144, scss/style.scss */
+/* line 147, scss/style.scss */
 .cs_button.cs_button_yellow:hover {
   background-color: #a28309;
 }
-/* line 149, scss/style.scss */
+/* line 152, scss/style.scss */
 .cs_button.cs_button_orange {
   background-color: #e67e22;
 }
-/* line 152, scss/style.scss */
+/* line 155, scss/style.scss */
 .cs_button.cs_button_orange:hover {
   background-color: #a15512;
 }
-/* line 157, scss/style.scss */
+/* line 160, scss/style.scss */
 .cs_button.cs_button_red {
   background-color: #e74c3c;
 }
-/* line 160, scss/style.scss */
+/* line 163, scss/style.scss */
 .cs_button.cs_button_red:hover {
   background-color: #b82617;
 }
-/* line 165, scss/style.scss */
+/* line 168, scss/style.scss */
 .cs_button.cs_button_pink {
   background-color: #ffcad1;
 }
-/* line 168, scss/style.scss */
+/* line 171, scss/style.scss */
 .cs_button.cs_button_pink:hover {
   background-color: #ff7587;
 }
-/* line 173, scss/style.scss */
+/* line 176, scss/style.scss */
 .cs_button.cs_button_grey {
   background-color: #7f8c8d;
 }
-/* line 176, scss/style.scss */
+/* line 179, scss/style.scss */
 .cs_button.cs_button_grey:hover {
   background-color: #566061;
 }
-/* line 181, scss/style.scss */
+/* line 184, scss/style.scss */
 .cs_button.cs_button_nightblue {
   background-color: #2c3e50;
 }
-/* line 184, scss/style.scss */
+/* line 187, scss/style.scss */
 .cs_button.cs_button_nightblue:hover {
   background-color: #0e1419;
 }
-/* line 189, scss/style.scss */
+/* line 192, scss/style.scss */
 .cs_button.cs_button_small {
   padding: 5px 10px;
 }
-/* line 193, scss/style.scss */
+/* line 196, scss/style.scss */
 .cs_button.cs_button_medium {
   padding: 10px 20px;
 }
-/* line 197, scss/style.scss */
+/* line 200, scss/style.scss */
 .cs_button.cs_button_large {
   padding: 15px 40px;
 }
 
 /* Tabs */
-/* line 204, scss/style.scss */
+/* line 207, scss/style.scss */
 .cs_tabs {
   width: 100%;
   display: inline-block;
   margin: 20px 0;
 }
-/* line 210, scss/style.scss */
+/* line 213, scss/style.scss */
 .cs_tabs ul.nav {
   margin: 0;
   background: none;
   border: none;
 }
-/* line 216, scss/style.scss */
+/* line 219, scss/style.scss */
 .cs_tabs ul.nav li {
   list-style-type: none;
   display: inline-block;
@@ -229,19 +229,19 @@
   background: #ebeded;
   z-index: 10;
 }
-/* line 225, scss/style.scss */
+/* line 228, scss/style.scss */
 .cs_tabs ul.nav li.ui-tabs-active, .cs_tabs ul.nav li.ui-state-active {
   background: #ffffff;
 }
-/* line 229, scss/style.scss */
+/* line 232, scss/style.scss */
 .cs_tabs ul.nav li.ui-state-hover {
   background: #ffffff;
 }
-/* line 233, scss/style.scss */
+/* line 236, scss/style.scss */
 .cs_tabs ul.nav li:before {
   content: none;
 }
-/* line 237, scss/style.scss */
+/* line 240, scss/style.scss */
 .cs_tabs ul.nav li a {
   border: 1px solid #ebeded;
   border-bottom-color: transparent;
@@ -250,19 +250,51 @@
   padding: 10px 15px;
   color: #141414;
 }
-/* line 245, scss/style.scss */
+/* line 248, scss/style.scss */
 .cs_tabs ul.nav li a:focus {
   outline: none;
 }
-/* line 249, scss/style.scss */
+/* line 252, scss/style.scss */
 .cs_tabs ul.nav li a:hover {
   text-decoration: none;
 }
-/* line 256, scss/style.scss */
+/* line 259, scss/style.scss */
 .cs_tabs .cs_tab_content {
   border: 1px solid #ebeded;
   padding: 20px;
   top: -1px;
   position: relative;
+  width: 100%;
   z-index: 5;
+}
+
+/* line 269, scss/style.scss */
+.cs_separator {
+  margin: 30px 0;
+  width: 100%;
+}
+/* line 274, scss/style.scss */
+.cs_separator hr {
+  display: block;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+/* line 282, scss/style.scss */
+.cs_separator hr.cs_separator_solid {
+  border-top: 2px solid #ebeded;
+}
+/* line 286, scss/style.scss */
+.cs_separator hr.cs_separator_dashed {
+  border-top: 2px dashed #ebeded;
+}
+/* line 290, scss/style.scss */
+.cs_separator hr.cs_separator_dotted {
+  border-top: 2px dotted #ebeded;
+}
+/* line 294, scss/style.scss */
+.cs_separator hr.cs_separator_double {
+  border-top: 2px double #ebeded;
 }

@@ -11,6 +11,7 @@ function coco_shortcodes_register(){
    add_shortcode(_x('cocorico_button', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_button');
    add_shortcode(_x('cocorico_tabs', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tabs');
    add_shortcode(_x('cocorico_tab', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_tab');
+   add_shortcode(_x('cocorico_separator', 'shortcode name', 'cocoshortcodes'), 'coco_shortcodes_separator');
 }
 add_action( 'init', 'coco_shortcodes_register');
 
@@ -239,6 +240,39 @@ if (!function_exists('coco_shortcodes_tab')){
 	}
 }
 
+// Separator Shortcode (hr)
+if (!function_exists('coco_shortcodes_separator')){
+	function coco_shortcodes_separator($atts) {
+		
+		extract(shortcode_atts(array(
+			_x('style', 'shortcode attribute name', 'cocoshortcodes') => _x('solid', 'shortcode attribute value', 'cocoshortcodes'),
+		), $atts));
+		
+		$style = ${_x('style', 'shortcode attribute name', 'cocoshortcodes')};
+		
+		$class = '';
+		
+		switch($style){
+			case _x('solid', 'shortcode attribute value', 'cocoshortcodes') :
+				$class .= 'cs_separator_solid';
+			break;
+			case _x('dashed', 'shortcode attribute value', 'cocoshortcodes') :
+				$class .= 'cs_separator_dashed';
+			break;
+			case _x('dotted', 'shortcode attribute value', 'cocoshortcodes') :
+				$class .= 'cs_separator_dotted';
+			break;
+			case _x('double', 'shortcode attribute value', 'cocoshortcodes') :
+				$class .= 'cs_separator_double';
+			break;
+			default :
+			 	$class .= 'cs_separator_solid';
+		}
 
+		$res = '<div class="cs_separator cs_clear"><hr class="'.$class.'"></div>';
+		
+	   return $res;
+	}
+}
 
 
