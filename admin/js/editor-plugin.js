@@ -160,7 +160,7 @@
 					                    	name: 'button_target',
 					                    	label: editor.getLang('coco_shortcodes_tinymce.button_target'),
 					                    	values:[	{	text: editor.getLang('coco_shortcodes_tinymce.button_link_same'),
-					                    					value: ''
+					                    					value: editor.getLang('coco_shortcodes_tinymce.button_link_same_value')
 					                    				},
 					                    				{	text: editor.getLang('coco_shortcodes_tinymce.button_link_other'),
 					                    					value: editor.getLang('coco_shortcodes_tinymce.button_link_other_value')

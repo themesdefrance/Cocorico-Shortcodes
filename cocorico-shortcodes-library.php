@@ -2,6 +2,9 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// Thanks to my friend Rémi Corson for those snippets :
+// http://www.remicorson.com/how-to-create-translation-ready-shortcodes/
+
 // Column Shortcode generator
 if(!function_exists('coco_shortcodes_column')){
 	function coco_shortcodes_column($atts, $content = null) {
@@ -112,7 +115,7 @@ if (!function_exists('coco_shortcodes_button')){
 		$size 	= ${_x('size', 'shortcode attribute name', 'cocoshortcodes')};
 		$color 	= ${_x('color', 'shortcode attribute name', 'cocoshortcodes')};
 		
-		$target = ($target == '_blank' ? ' target="_blank" ' : '');
+		$target = ($target == _x('new_window', 'shortcode attribute value', 'cocoshortcodes') ? ' target="_blank" ' : '');
 		
 		$classes = 'cs_button';
 		
