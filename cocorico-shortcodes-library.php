@@ -198,7 +198,7 @@ if (!function_exists('coco_shortcodes_tabs')){
 		
 		// Thanks to https://stackoverflow.com/questions/23307032/create-wordpress-shortcode-for-jquery-ui-tabs
 		
-		preg_match_all( '/tab ' . _x('label', 'shortcode attribute name', 'cocoshortcodes') . '="([^\"]+)"/i', $content, $matche, PREG_OFFSET_CAPTURE );
+		preg_match_all( '/' . _x('cocorico_tab', 'shortcode name', 'cocoshortcodes') . ' ' . _x('label', 'shortcode attribute name', 'cocoshortcodes') . '="([^\"]+)"/i', $content, $matche, PREG_OFFSET_CAPTURE );
 
 	    $tab_title = array();
 	
@@ -209,10 +209,10 @@ if (!function_exists('coco_shortcodes_tabs')){
 	    $res = '';
 	
 	    if( count($tab_title) ) {
-	        $res .= '<div id="tabs_' . $id . '" class="cs_tabs">';
+	        $res .= '<div id="cs_tabs_' . $id . '" class="cs_tabs">';
 	        $res .= '<ul class="nav cs_clear">';
 	        foreach( $tab_title as $tab ){
-	            $res .= '<li><a href="#tabs_'. str_replace('-', '_', sanitize_title( $tab[0] )) .'">' . $tab[0] . '</a></li>';
+	            $res .= '<li><a href="#cs_tabs_'. str_replace('-', '_', sanitize_title( $tab[0] )) .'">' . $tab[0] . '</a></li>';
 	        }
 	        $res .= '</ul>' . do_shortcode( $content ) . '</div>';
 	    } else {
@@ -233,7 +233,7 @@ if (!function_exists('coco_shortcodes_tab')){
 		
 		$label = ${_x('label', 'shortcode attribute name', 'cocoshortcodes')};
 		
-		$res = '<div class="tab cs_tab_content" id="tabs_'. str_replace('-', '_', sanitize_title( $label )) .'">'. do_shortcode( $content ) .'</div>';
+		$res = '<div class="cs_tab_content" id="cs_tabs_'. str_replace('-', '_', sanitize_title( $label )) .'">'. do_shortcode( $content ) .'</div>';
 		
 		return $res;
 	}

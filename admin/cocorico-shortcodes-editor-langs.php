@@ -114,9 +114,9 @@ function coco_shortcodes_tinymce_translation() {
 		
 		'tabs'					=> _x('Tabs', 'tinymce tabs label', 'cocoshortcodes'),
         'tabs_add'				=> _x('Add tabs', 'tinymce popup title', 'cocoshortcodes'),
-        'tabs_label'			=> _x('Select how many tabs to insert', 'tinymce section title', 'cocoshortcodes'),
+        'tabs_label'			=> _x('Select how many tabs you want to insert', 'tinymce section title', 'cocoshortcodes'),
         
-        'tabs_number'			=> _x('Nombre', 'tinymce popup attribute label', 'cocoshortcodes'),
+        'tabs_number'			=> _x('Number', 'tinymce popup attribute label', 'cocoshortcodes'),
         
         'tab_label_att'			=> _x('label', 'shortcode attribute name', 'cocoshortcodes'),
         'tab_label_value'		=> _x('Tab label', 'shortcode attribute value', 'cocoshortcodes'),
