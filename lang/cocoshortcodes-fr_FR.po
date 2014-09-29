@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cocorico Shortcodes\n"
-"POT-Creation-Date: 2014-09-28 22:51+0100\n"
-"PO-Revision-Date: 2014-09-28 22:51+0100\n"
+"POT-Creation-Date: 2014-09-29 16:41+0100\n"
+"PO-Revision-Date: 2014-09-29 16:42+0100\n"
 "Last-Translator: Alex Thèmes de France <alex@themesdefrance.fr>\n"
 "Language-Team: Thèmes de France <alex@themesdefrance>\n"
 "Language: fr_FR\n"
@@ -575,12 +575,12 @@ msgstr "style"
 #: ../admin/cocorico-shortcodes-editor-langs.php:141
 msgctxt "tinymce button label"
 msgid "Toggle"
-msgstr "Dépliant"
+msgstr "Va-et-vient"
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:142
 msgctxt "tinymce popup title"
 msgid "Add a toggle"
-msgstr "Ajouter un dépliant"
+msgstr "Ajouter un va-et-vient"
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:144
 #: ../admin/cocorico-shortcodes-editor-langs.php:156
@@ -592,7 +592,7 @@ msgstr "Titre"
 #: ../cocorico-shortcodes-library.php:15
 msgctxt "shortcode name"
 msgid "cocorico_toggle"
-msgstr "cocorico_depliant"
+msgstr "cocorico_vaetvient"
 
 #: ../admin/cocorico-shortcodes-editor-langs.php:149
 #: ../admin/cocorico-shortcodes-editor-langs.php:164
