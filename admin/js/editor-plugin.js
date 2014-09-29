@@ -294,7 +294,7 @@
 				                	
 				                	for (i = 1; i <= e.data.tabs_number; i++) { 
 									    res += '[' + editor.getLang('coco_shortcodes_tinymce.single_tab_shortcode') + ' ' + editor.getLang('coco_shortcodes_tinymce.tab_label_att') + '="' + editor.getLang('coco_shortcodes_tinymce.tab_label_value') + ' ' + i + '"]';
-									    res += editor.getLang('coco_shortcodes_tinymce.tab_content');
+									    res += editor.getLang('coco_shortcodes_tinymce.tab_content') + ' ' + i;
 									    res += '[/' + editor.getLang('coco_shortcodes_tinymce.single_tab_shortcode') + ']<br>';
 									}
 				                	res += '[/' + editor.getLang('coco_shortcodes_tinymce.tabs_shortcode') + ']<br>';

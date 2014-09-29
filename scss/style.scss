@@ -1,5 +1,5 @@
 $cs_grey : #ebeded;
-
+$cs_black : #232323;
 
 /* Commons */
 .cs_clear{
@@ -49,6 +49,8 @@ $cs_grey : #ebeded;
 	padding: 30px;
 	background-color:#f8f8f8;
 	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
 	
 	p{
 		margin:0 !important;
@@ -61,7 +63,10 @@ $cs_grey : #ebeded;
 	
 	&.cs_message_info{
 		background-color:#eff8fe;
-		color:#5db2f0;
+		
+		p{
+			color:#5db2f0 !important;
+		}
 		
 		a, a:hover{
 			color:#158ce3;
@@ -70,7 +75,10 @@ $cs_grey : #ebeded;
 	
 	&.cs_message_alert{
 		background-color:#fffae9;
-		color:#f8ad0d;
+		
+		p{
+			color:#f8ad0d;
+		}
 		
 		a, a:hover{
 			color:#ab7605;
@@ -79,7 +87,10 @@ $cs_grey : #ebeded;
 	
 	&.cs_message_error{
 		background-color:#ffeeee;
-		color:#fc5355;
+		
+		p{
+			color:#fc5355;
+		}
 		
 		a, a:hover{
 			color:#c40306;
@@ -88,7 +99,10 @@ $cs_grey : #ebeded;
 	
 	&.cs_message_success{
 		background-color:#ebfaf5;
-		color:#38c994;
+		
+		p{
+			color:#38c994;
+		}
 		
 		a, a:hover{
 			color:#258763;
@@ -142,10 +156,10 @@ $cs_grey : #ebeded;
 	}
 	
 	&.cs_button_yellow{
-		background-color:#f1c40f;
+		background-color:#f4d03f;
 		
 		&:hover{
-			background-color:#a28309;
+			background-color:#e2b80d;
 		}
 	}
 	
@@ -166,10 +180,10 @@ $cs_grey : #ebeded;
 	}
 	
 	&.cs_button_pink{
-		background-color:#ffcad1;
+		background-color:#ffa8b4;
 		
 		&:hover{
-			background-color:#ff7587;
+			background-color:#ff7588;
 		}
 	}
 	
@@ -209,20 +223,27 @@ $cs_grey : #ebeded;
 	width:100%;
 	display:inline-block;
 	margin:20px 0;
+	box-sizing: border-box;
+	border:0;
+	background:none;
 	
 	ul.nav{
 		
-		margin:0;
+		margin:0 !important;
+		padding:0 !important;
 		background:none;
 		border:none;
 		
 		li{
 			list-style-type:none;
 			display:inline-block;
-			margin:0;
-			padding:0;
+			margin:0 !important;
+			padding:0 !important;
 			background:$cs_grey;
-			z-index:10;
+			float: none;
+			position: static;
+			top: auto;
+			border:none !important;
 			
 			&.ui-tabs-active,
 			&.ui-state-active{
@@ -239,11 +260,15 @@ $cs_grey : #ebeded;
 			
 			a{
 				border: 1px solid $cs_grey;
-				border-bottom-color:transparent;
+				border-bottom-color:#fff;
 				position: relative;
 				display: inline-block;
-				padding: 10px 15px;
-				color: #141414;
+				padding: 10px 15px !important;
+				float:none !important;
+				text-decoration:none !important;
+				color: $cs_black !important;
+				z-index:10;
+				cursor:pointer !important;
 				
 				&:focus{
 					outline:none;
@@ -262,7 +287,12 @@ $cs_grey : #ebeded;
 		top: -1px;
 		position: relative;
 		width: 100%;
+		box-sizing: border-box;
 		z-index:5;
+		
+		p:last-child{
+			margin-bottom:0;
+		}
 	}
 }
 
@@ -272,6 +302,7 @@ $cs_grey : #ebeded;
 	
 	margin:30px 0;
 	width: 100%;
+	box-sizing: border-box;
 	
 	hr{
 		display:block;
@@ -304,13 +335,16 @@ $cs_grey : #ebeded;
 .cs_toggle{
 
 	margin:0 0 20px 0;
+	width:100%;
+	box-sizing: border-box;
 	
 	p.cs_toggle_button{
 		background-color:#ffffff;
 		border: 1px solid $cs_grey;
 		display: block;
 		width:100%;
-		margin:0;
+		box-sizing: border-box;
+		margin:0 !important;
 		padding: 10px 15px;
 		cursor:pointer;
 		
@@ -332,7 +366,7 @@ $cs_grey : #ebeded;
 		}
 		
 		a{
-			color: #141414;
+			color: $cs_black !important;
 			
 			&:hover{
 				text-decoration:none;
@@ -343,7 +377,8 @@ $cs_grey : #ebeded;
 	.cs_toggle_content{
 		border: 1px solid $cs_grey;
 		padding: 20px;
-		
+		width:100%;
+		box-sizing: border-box;
 	}
 }
 
@@ -353,14 +388,21 @@ $cs_grey : #ebeded;
 	border:1px solid $cs_grey;
 	padding:20px;
 	margin:0 0 20px 0;
+	width:100%;
+	box-sizing: border-box;
 	
 	.cs_calltoaction_content{
 		margin:0 0 10px 0;
 	}
 	
 	.cs_button_calltoaction{
+		color:#fff !important;
 		padding:10px 20px;
 		margin:0;
+		
+		&:hover{
+			color:#fff !important;
+		}
 	}
 	
 	p:last-child{

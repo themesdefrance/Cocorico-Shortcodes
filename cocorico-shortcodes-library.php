@@ -214,9 +214,9 @@ if (!function_exists('coco_shortcodes_tabs')){
 	        foreach( $tab_title as $tab ){
 	            $res .= '<li><a href="#cs_tabs_'. str_replace('-', '_', sanitize_title( $tab[0] )) .'">' . $tab[0] . '</a></li>';
 	        }
-	        $res .= '</ul>' . do_shortcode( $content ) . '</div>';
+	        $res .= '</ul>' . do_shortcode($content) . '</div>';
 	    } else {
-	        $res .= do_shortcode( $content );
+	        $res .= do_shortcode($content);
 	    }
 	
 	    return $res;
@@ -233,7 +233,7 @@ if (!function_exists('coco_shortcodes_tab')){
 		
 		$label = ${_x('label', 'shortcode attribute name', 'cocoshortcodes')};
 		
-		$res = '<div class="cs_tab_content" id="cs_tabs_'. str_replace('-', '_', sanitize_title( $label )) .'">'. do_shortcode( $content ) .'</div>';
+		$res = '<div class="cs_tab_content" id="cs_tabs_'. str_replace('-', '_', sanitize_title( $label )) .'">'. do_shortcode(wpautop($content)) .'</div>';
 		
 		return $res;
 	}
@@ -286,7 +286,7 @@ if (!function_exists('coco_shortcodes_toggle')){
 		
 		$res = '<div class="cs_toggle">';
 		$res .= '<p class="cs_toggle_button"><a href="#">'.$title.'</a></p>';
-		$res .= '<div class="cs_toggle_content">' . do_shortcode($content) . '</div>';
+		$res .= '<div class="cs_toggle_content">' . do_shortcode(wpautop($content)) . '</div>';
 		$res .= '</div>';
 		
 	   return $res;
