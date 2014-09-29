@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Cocorico Shortcodes
-Plugin URI: https://www.themesdefrance.fr/plugins/coco-shortcodes
-Description: Add some shortcodes to enhance your theme
+Plugin URI: https://www.themesdefrance.fr/plugins/cocorico-shortcodes
+Description: Cocorico Shortcodes adds a useful set of shortcodes to enhance your WordPress powered website. Our shortcodes are fully internationalized.
 Version: 1.0.0
 Author: Themes de France
 Author URI: https://www.themesdefrance.fr
