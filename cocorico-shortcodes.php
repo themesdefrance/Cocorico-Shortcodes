@@ -54,6 +54,10 @@ if (!function_exists('coco_shortcodes_enqueue')){
 }
 add_action('wp_enqueue_scripts', 'coco_shortcodes_enqueue');
 
+/* wpautop fix */
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop' , 12);
+
 // Load TinyMce Button
 require_once('admin/cocorico-shortcodes-editor.php');
 
