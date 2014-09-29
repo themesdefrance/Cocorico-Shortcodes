@@ -48,7 +48,7 @@ add_action( 'wp_enqueue_scripts', 'coco_shortcodes_load_style' );
 if (!function_exists('coco_shortcodes_enqueue')){
 	function coco_shortcodes_enqueue(){
 
-		wp_register_script('coco_shortcodes', plugins_url('/js/cocorico-shortcodes.js' , __FILE__) , array('jquery'), null , true);
+		wp_register_script('coco_shortcodes', plugins_url('/js/cocorico-shortcodes.min.js' , __FILE__) , array('jquery'), null , true);
 		wp_enqueue_script('coco_shortcodes');
 	}
 }

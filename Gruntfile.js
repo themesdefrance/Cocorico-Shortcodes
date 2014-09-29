@@ -16,17 +16,17 @@ module.exports = function(grunt) {
 			imagesDir: 'img',
 			require: []
 		},
-		build: {
+		dev: {
 			options:{
-				cssDir: '.',
+				cssDir: 'scss/css/',
 				outputStyle: 'expanded'
 				//outputStyle: 'compressed'
 			}
 		},
-		dev: {
+		build: {
 			options:{
-				cssDir: 'scss/css/',
-				outputStyle: 'expanded',
+				cssDir: '.',
+				outputStyle: 'compressed',
 				noLineComments: true
 			}
 		}
@@ -34,12 +34,13 @@ module.exports = function(grunt) {
     
   });
 
-  // Load the plugin that provides the "watch" and "compass" tasks.
+  // Load the plugin that provides the "watch", "compass" & "uglify" tasks.
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['compass:build']);
+  grunt.registerTask('default', ['compass:dev']);
   grunt.registerTask('build', ['compass:build', 'compass:dev']);
 
 };
