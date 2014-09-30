@@ -44,6 +44,15 @@ $cs_black : #232323;
 	margin-right:0;
 }
 
+/* Responsive stuff */
+@media only screen and (max-width: 480px){
+	.cs_column{
+		float:none;
+		width:100%;
+		margin-right:0;
+	}
+}
+
 /* Messages box */
 .cs_message{
 	padding: 30px;
