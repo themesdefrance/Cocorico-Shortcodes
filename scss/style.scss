@@ -12,6 +12,10 @@ $cs_black : #232323;
 	float:left;
 	margin-right:4%;
 	width:100%;
+	
+	img{
+		height:auto;
+	}
 }
 
 .cs_one_half{
@@ -124,6 +128,7 @@ $cs_black : #232323;
 .cs_button{
 	
 	color:#ffffff !important;
+	border:none !important;
 	display:inline-block;
 	text-align: center;
 	margin: 0 0 10px 0;
