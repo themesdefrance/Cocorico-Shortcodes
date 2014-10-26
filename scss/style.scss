@@ -74,6 +74,18 @@ $cs_black : #232323;
 		text-decoration:underline;
 	}
 	
+	&.cs_message_classic{
+		background-color:inherit;
+		
+		p{
+			color:inherit;
+		}
+		
+		a, a:hover{
+			color:inherit;
+		}
+	}
+	
 	&.cs_message_info{
 		background-color:#eff8fe;
 		
