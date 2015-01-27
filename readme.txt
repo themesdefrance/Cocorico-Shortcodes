@@ -3,8 +3,8 @@ Contributors: themesdefrance
 Donate link: https://www.themesdefrance.fr/
 Tags: shortcodes, toggle, tabs, call to action, divider, spearator, columns, message box
 Requires at least: 3.9
-Tested up to: 4.0.0
-Stable tag: 1.0.0
+Tested up to: 4.1.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,6 +106,15 @@ N'attendez plus et envoyez-nous un email à question arobase themesdefrance poin
 2. Demo
 
 == Changelog ==
+
+= 1.0.2 =
+ - Fix : 2/3 column width was too large
+ - Update : You can now add shortcodes from any post type
+
+= 1.0.1 =
+ - Add : Classic message style added
+ - Fix : Auto p and br are disabled
+ - Update : Images and buttons styles updated
 
 = 1.0.0 =
  - Initial release
