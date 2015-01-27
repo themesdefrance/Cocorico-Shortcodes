@@ -34,6 +34,10 @@ $cs_black : #232323;
 
 .cs_two_thirds{
 	width:65.66666%;
+	
+	&.cs_column_first{
+		width:64.66666%;
+	}
 }
 
 .cs_three_fourths{
