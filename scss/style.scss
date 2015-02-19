@@ -341,6 +341,7 @@ $cs_black : #232323;
 		margin:0;
 		background:none;
 		border: none;
+		border-bottom: none !important;
 	
 		&.cs_separator_solid{
 			border-top:2px solid $cs_grey;

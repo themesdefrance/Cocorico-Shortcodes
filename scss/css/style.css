@@ -343,32 +343,33 @@
   margin: 0;
   background: none;
   border: none;
+  border-bottom: none !important;
 }
-/* line 345, ../style.scss */
+/* line 346, ../style.scss */
 .cs_separator hr.cs_separator_solid {
   border-top: 2px solid #ebeded;
 }
-/* line 349, ../style.scss */
+/* line 350, ../style.scss */
 .cs_separator hr.cs_separator_dashed {
   border-top: 2px dashed #ebeded;
 }
-/* line 353, ../style.scss */
+/* line 354, ../style.scss */
 .cs_separator hr.cs_separator_dotted {
   border-top: 2px dotted #ebeded;
 }
-/* line 357, ../style.scss */
+/* line 358, ../style.scss */
 .cs_separator hr.cs_separator_double {
   border-top: 2px double #ebeded;
 }
 
 /* Toggle */
-/* line 365, ../style.scss */
+/* line 366, ../style.scss */
 .cs_toggle {
   margin: 0 0 20px 0;
   width: 100%;
   box-sizing: border-box;
 }
-/* line 371, ../style.scss */
+/* line 372, ../style.scss */
 .cs_toggle p.cs_toggle_button {
   background-color: #ffffff;
   border: 1px solid #ebeded;
@@ -379,33 +380,33 @@
   padding: 10px 15px;
   cursor: pointer;
 }
-/* line 381, ../style.scss */
+/* line 382, ../style.scss */
 .cs_toggle p.cs_toggle_button:before {
   content: '+';
   margin-right: 10px;
 }
-/* line 386, ../style.scss */
+/* line 387, ../style.scss */
 .cs_toggle p.cs_toggle_button:hover {
   background-color: #ebeded;
 }
-/* line 390, ../style.scss */
+/* line 391, ../style.scss */
 .cs_toggle p.cs_toggle_button.toggle-active {
   border-bottom: none;
   background-color: #ebeded;
 }
-/* line 393, ../style.scss */
+/* line 394, ../style.scss */
 .cs_toggle p.cs_toggle_button.toggle-active:before {
   content: '-';
 }
-/* line 398, ../style.scss */
+/* line 399, ../style.scss */
 .cs_toggle p.cs_toggle_button a {
   color: #232323 !important;
 }
-/* line 401, ../style.scss */
+/* line 402, ../style.scss */
 .cs_toggle p.cs_toggle_button a:hover {
   text-decoration: none;
 }
-/* line 407, ../style.scss */
+/* line 408, ../style.scss */
 .cs_toggle .cs_toggle_content {
   border: 1px solid #ebeded;
   padding: 20px;
@@ -414,7 +415,7 @@
 }
 
 /* Call to action */
-/* line 417, ../style.scss */
+/* line 418, ../style.scss */
 .cs_calltoaction {
   border: 1px solid #ebeded;
   padding: 20px;
@@ -422,21 +423,21 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* line 424, ../style.scss */
+/* line 425, ../style.scss */
 .cs_calltoaction .cs_calltoaction_content {
   margin: 0 0 10px 0;
 }
-/* line 428, ../style.scss */
+/* line 429, ../style.scss */
 .cs_calltoaction .cs_button_calltoaction {
   color: #fff !important;
   padding: 10px 20px;
   margin: 0;
 }
-/* line 433, ../style.scss */
+/* line 434, ../style.scss */
 .cs_calltoaction .cs_button_calltoaction:hover {
   color: #fff !important;
 }
-/* line 438, ../style.scss */
+/* line 439, ../style.scss */
 .cs_calltoaction p:last-child {
   margin: 0;
 }
